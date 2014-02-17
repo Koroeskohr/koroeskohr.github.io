@@ -1,0 +1,20 @@
+div{
+	height: 200px;
+	width:200px;
+	margin-bottom: 50px;
+}
+
+.green{
+	background-color: green;display: inline-block;
+}
+.red{
+	background-color: red;display: inline-block;
+	
+}
+.yellow{
+	background-color: yellow;display: inline-block;
+	
+}
+.blue{
+	background-color: blue;display: inline-block;
+}
