@@ -1,0 +1,62 @@
+@import "data";
+
+body{
+	margin : 0;
+	height:100%;
+	min-width: 355px;
+}
+
+header{
+	height:100%;
+	text-align: center;
+	background-image: url(img/fond2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	img {
+		padding-bottom: 50px;
+		-webkit-filter: drop-shadow(5px 5px 5px #111);
+    	filter: drop-shadow(5px 5px 5px #111);
+    	margin-top : 50px;
+    	width:75%;
+    	max-width: 500px;
+	}
+
+	div {
+		width:90%;
+		margin: 0 auto;
+	}
+}
+
+h1, h2 {
+	color:white;
+	font-family: RalewayExtraBold;
+	font-variant: small-caps;
+
+}
+
+h1 {
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 3em;
+	margin-top: 0;
+}	
+
+article{
+	padding:0 25%;
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+		line-height: 1em;
+	}
+
+	header {
+		img {
+			margin-top: 2%;
+		}
+	}
+}
