@@ -71,26 +71,35 @@ header {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-/* line 16, style.scss */
-header > img {
-  padding-bottom: 50px;
-  -webkit-filter: drop-shadow(5px 5px 5px #111111);
-  filter: drop-shadow(5px 5px 5px #111111);
-  margin-top: 50px;
-  width: 75%;
-  max-width: 500px;
-}
-/* line 25, style.scss */
+/* line 18, style.scss */
 header div {
   width: 90%;
   margin: 0 auto;
 }
+/* line 22, style.scss */
+header div > img {
+  -webkit-filter: drop-shadow(5px 5px 5px #111111);
+  filter: drop-shadow(5px 5px 5px #111111);
+  margin-top: 50px;
+  width: 50%;
+  max-width: 500px;
+}
 /* line 31, style.scss */
+header a {
+  text-decoration: none;
+}
+/* line 35, style.scss */
+header ul {
+  margin-top: 5%;
+}
+/* line 38, style.scss */
 header li {
   display: inline;
+  list-style-type: none;
+  margin-right: 3%;
 }
 
-/* line 38, style.scss */
+/* line 47, style.scss */
 section h1 {
   width: auto;
   text-align: center;
@@ -101,38 +110,38 @@ section h1 {
   font-size: 3em;
 }
 
-/* line 49, style.scss */
+/* line 58, style.scss */
 h1, h2 {
   color: white;
   font-family: RalewayExtraBold;
   font-variant: small-caps;
 }
 
-/* line 56, style.scss */
+/* line 65, style.scss */
 h1 {
   font-size: 5em;
   margin-bottom: 0;
 }
 
-/* line 61, style.scss */
+/* line 70, style.scss */
 h2 {
   font-size: 3em;
   margin-top: 0;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 69, style.scss */
+  /* line 78, style.scss */
   h1 {
     line-height: 1em;
   }
 
-  /* line 74, style.scss */
+  /* line 83, style.scss */
   header img {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 478px) {
-  /* line 81, style.scss */
+  /* line 90, style.scss */
   header img {
     width: 50%;
   }

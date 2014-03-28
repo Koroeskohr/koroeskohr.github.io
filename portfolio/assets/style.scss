@@ -13,23 +13,32 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	&>img {
-		padding-bottom: 50px;
-		-webkit-filter: drop-shadow(5px 5px 5px #111);
-    	filter: drop-shadow(5px 5px 5px #111);
-    	margin-top : 50px;
-    	width:75%;	
-    	max-width: 500px;
-	} 
+	
 
 	div {
 		width:90%;
 		margin: 0 auto;
 
+		&>img {
+		-webkit-filter: drop-shadow(5px 5px 5px #111);
+    	filter: drop-shadow(5px 5px 5px #111);
+    	margin-top : 50px;
+    	width:50%;	
+    	max-width: 500px;
+	} 
+	}
+	
+	a {
+		text-decoration: none;
 	}
 
+	ul {
+		margin-top: 5%;
+	}
 	li {
 		display: inline;
+		list-style-type: none;
+		margin-right: 3%;
 	}
 }
 
