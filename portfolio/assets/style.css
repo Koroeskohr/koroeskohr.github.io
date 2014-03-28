@@ -80,9 +80,8 @@ header div {
 header div > img {
   -webkit-filter: drop-shadow(5px 5px 5px #111111);
   filter: drop-shadow(5px 5px 5px #111111);
-  margin-top: 4%;
-  width: 50%;
-  max-width: 500px;
+  margin-top: 5%;
+  height: 50%;
 }
 /* line 31, style.scss */
 header a {
@@ -99,50 +98,51 @@ header li {
   margin-right: 3%;
 }
 
-/* line 47, style.scss */
+/* line 45, style.scss */
+#social img {
+  width: 60px;
+}
+
+/* line 52, style.scss */
 section h1 {
   width: auto;
   text-align: center;
   background-color: black;
   margin-top: 0;
   text-transform: uppercase;
-  padding: 2% 0;
+  padding: 1% 0;
   font-size: 3em;
 }
 
-/* line 58, style.scss */
+/* line 63, style.scss */
 h1, h2 {
   color: white;
   font-family: RalewayExtraBold;
   font-variant: small-caps;
 }
 
-/* line 65, style.scss */
+/* line 70, style.scss */
 h1 {
   font-size: 5em;
   margin-bottom: 0;
+  margin-top: 3%;
 }
 
-/* line 70, style.scss */
+/* line 76, style.scss */
 h2 {
   font-size: 3em;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 78, style.scss */
+  /* line 85, style.scss */
   h1 {
     line-height: 1em;
   }
 
-  /* line 83, style.scss */
-  header img {
-    margin-top: 2%;
-  }
-}
-@media screen and (max-width: 478px) {
   /* line 90, style.scss */
-  header img {
-    width: 50%;
+  header div > img {
+    margin-top: 2%;
   }
 }

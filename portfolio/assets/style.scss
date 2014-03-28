@@ -20,12 +20,12 @@ header{
 		margin: 0 auto;
 
 		&>img {
-		-webkit-filter: drop-shadow(5px 5px 5px #111);
-    	filter: drop-shadow(5px 5px 5px #111);
-    	margin-top : 4%;
-    	width:50%;	
-    	max-width: 500px;
-	} 
+			-webkit-filter: drop-shadow(5px 5px 5px #111);
+	    	filter: drop-shadow(5px 5px 5px #111);
+	    	margin-top : 5%;
+	    	height:50%;	
+	    	//max-width: 500px;
+		} 
 	}
 	
 	a {
@@ -42,6 +42,11 @@ header{
 	}
 }
 
+#social img {
+	width:60px;
+}
+
+
 section {
 
 	h1 {
@@ -50,7 +55,7 @@ section {
 		background-color: black;
 		margin-top: 0;
 		text-transform: uppercase;
-		padding: 2% 0;
+		padding: 1% 0;
 		font-size: 3em;
 	}
 }
@@ -65,11 +70,13 @@ h1, h2 {
 h1 {
 	font-size: 5em;
 	margin-bottom: 0;
+	margin-top: 3%;
 }
 
 h2 {
 	font-size: 3em;
 	margin-top: 0;
+	margin-bottom:0;
 }	
 
 
@@ -80,7 +87,7 @@ h2 {
 	}
 
 	header {
-		img {
+		div>img {
 			margin-top: 2%;
 		}
 	}
@@ -88,6 +95,5 @@ h2 {
 
 @media screen and (max-width: 478px){
 	header img {
-		width:50%;
 	}
 }
