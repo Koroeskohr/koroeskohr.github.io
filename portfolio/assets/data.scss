@@ -63,3 +63,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*@mixin sprite ($path, $x : 0px, $y : 0px, $width:128px, $height:128px) {
+    background-image: url($path);
+    background-position: $x $y;
+    background-repeat: no-repeat;
+    width : $width;
+    height : $height;
+    content:"";
+    position: absolute;
+}*/

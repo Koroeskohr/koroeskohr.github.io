@@ -1,1 +1,0 @@
-setTimeout(function(){introJs().start();}, 4000);

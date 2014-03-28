@@ -13,18 +13,36 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	img {
+	&>img {
 		padding-bottom: 50px;
 		-webkit-filter: drop-shadow(5px 5px 5px #111);
     	filter: drop-shadow(5px 5px 5px #111);
     	margin-top : 50px;
-    	width:75%;
+    	width:75%;	
     	max-width: 500px;
-	}
+	} 
 
 	div {
 		width:90%;
 		margin: 0 auto;
+
+	}
+
+	li {
+		display: inline;
+	}
+}
+
+section {
+
+	h1 {
+		width:auto;
+		text-align:center;
+		background-color: black;
+		margin-top: 0;
+		text-transform: uppercase;
+		padding: 2% 0;
+		font-size: 3em;
 	}
 }
 
@@ -45,9 +63,7 @@ h2 {
 	margin-top: 0;
 }	
 
-article{
-	padding:0 25%;
-}
+
 
 @media screen and (max-width: 400px) {
 	h1 {
@@ -58,5 +74,11 @@ article{
 		img {
 			margin-top: 2%;
 		}
+	}
+}
+
+@media screen and (max-width: 478px){
+	header img {
+		width:50%;
 	}
 }
