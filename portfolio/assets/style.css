@@ -80,7 +80,7 @@ header div {
 header div > img {
   -webkit-filter: drop-shadow(5px 5px 5px #111111);
   filter: drop-shadow(5px 5px 5px #111111);
-  margin-top: 50px;
+  margin-top: 4%;
   width: 50%;
   max-width: 500px;
 }
