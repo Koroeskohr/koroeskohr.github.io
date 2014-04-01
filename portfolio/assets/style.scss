@@ -1,9 +1,26 @@
 @import "data";
 
+.abs-center {
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
 body{
 	margin : 0;
 	height:100%;
 	min-width: 355px;
+}
+
+h1, h2, h3{
+	font-family: RalewayExtraBold;
+	color:white;
+}
+
+p {
+	font-family: RalewayRegular;
+	color:white;
 }
 
 header{
@@ -21,10 +38,10 @@ header{
 
 		&>img {
 			-webkit-filter: drop-shadow(5px 5px 5px #111);
-	    	filter: drop-shadow(5px 5px 5px #111);
-	    	margin-top : 5%;
-	    	height:50%;	
-	    	//max-width: 500px;
+			filter: drop-shadow(5px 5px 5px #111);
+			margin-top : 7%;
+			height:50%;	
+			//max-width: 500px;
 		} 
 	}
 	
@@ -33,59 +50,73 @@ header{
 	}
 
 	ul {
-		margin-top: 5%;
+		margin-top: 8%;
 	}
 	li {
 		display: inline;
 		list-style-type: none;
 		margin-right: 3%;
 	}
+	h1, h2 {
+		color:white;
+		font-variant: small-caps;
+
+	}
+
+	h1 {
+		font-size: 5rem;
+		margin-bottom: 0;
+		margin-top: 3%;
+	}
+
+	h2 {
+		font-size: 3rem;
+		margin-top: 0;
+		margin-bottom:0;
+	}	
+
 }
 
 #social img {
 	width:60px;
 	-webkit-filter: drop-shadow(2px 2px 2px #111);
-	    	filter: drop-shadow(2px 2px 2px #111);
+			filter: drop-shadow(2px 2px 2px #111);
 }
 
 
-section {
-
-	h1 {
+#projects {
+	background:url(img/stardust.png);
+	overflow:hidden;
+	&> h1 {
 		width:auto;
 		text-align:center;
-		background-color: black;
+		color:white;
+		background-color: #030513;
 		margin-top: 0;
+		margin-bottom: 3%;
 		text-transform: uppercase;
 		padding: 1% 0;
-		font-size: 3em;
+		font-size: 3rem;
+
+	}
+
+	section {
+		clear: both;
+		padding : 0 3%;
+
+		img {
+			float:left;
+			margin : 0 2% 2% 0;
+		}
 	}
 }
 
-h1, h2 {
-	color:white;
-	font-family: RalewayExtraBold;
-	font-variant: small-caps;
-
-}
-
-h1 {
-	font-size: 5em;
-	margin-bottom: 0;
-	margin-top: 3%;
-}
-
-h2 {
-	font-size: 3em;
-	margin-top: 0;
-	margin-bottom:0;
-}	
 
 
 
 @media screen and (max-width: 400px) {
 	h1 {
-		line-height: 1em;
+		line-height: 5rem;
 	}
 
 	header {
@@ -95,7 +126,36 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 478px){
-	header img {
+
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	#social {
+		margin-top: 20%;
+		img {
+			width:120px;
+			-webkit-filter: drop-shadow(4px 4px 4px #111);
+					filter: drop-shadow(4px 4px 4px #111);
+		}
 	}
+	header {
+		h1 {
+			font-size: 8rem;
+			-webkit-filter: drop-shadow(2px 2px 4px #111);
+					filter: drop-shadow(2px 2px 4px #111);
+		}
+
+		h2 {
+			font-size:6rem;
+			-webkit-filter: drop-shadow(2px 2px 4px #111);
+					filter: drop-shadow(2px 2px 4px #111);
+		}
+	}
+	
+
+	header div>img {
+		margin-top: 10%;
+	}
+
 }
