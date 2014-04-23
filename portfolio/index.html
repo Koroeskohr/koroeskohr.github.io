@@ -103,12 +103,12 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 	<section id="contact" class="container">
 		<h1>Me contacter</h1>
 		<form method="post" action="contact.php">
-			<label for="name">Nom : </label><input type="text" id="name" name="name">
-			<label for="subject">Sujet : </label><input type="text" id="subject" name="subject">
+			<label for="name" data-scroll-reveal>Nom : </label><input type="text" id="name" name="name" data-scroll-reveal>
+			<label for="subject" data-scroll-reveal='after 0.5s'>Sujet : </label><input type="text" id="subject" name="subject" data-scroll-reveal='after 0.5s'>
 
-			<label for="message">Votre message :</label><textarea name="message" id="message"></textarea>
+			<label for="message" data-scroll-reveal='after 1s'>Votre message :</label><textarea name="message" id="message" data-scroll-reveal='after 1s'></textarea>
 
-			<button type="submit">Envoyer</button>
+			<button type="submit" data-scroll-reveal='after 2s'>Envoyer</button>
 		</form>
 	</section>
 
