@@ -170,9 +170,27 @@ header{
 	strong {
 		font-family: RalewayBold;
 	}
-	img {
+	&>div {
+		width:90%;
 		display:block;
 		margin:0 auto;
+		margin-top: 10%;
+
+	}
+	svg {
+		display:inline-block;
+
+		height:200px;
+		margin-right: 150px;
+	}
+
+	#skillbars {
+		figure {
+			display:inline-block;
+		}
+		figcaption {
+			width:30%;
+		}
 	}
 
 }
