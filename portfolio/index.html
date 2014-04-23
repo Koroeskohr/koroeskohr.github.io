@@ -48,19 +48,19 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 	</header>
 	<section id="projects" class="container">
 		<h1>Projets</h1>
-		<section id="project1">
+		<section id="project1" data-scroll-reveal>
 			<img src="assets/img/250x250.gif" alt="Projet 1">
 			<h1>Titre projet 1</h1>
 			<h2>Poste occupé</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
 		</section>
-		<section id="project2">
+		<section id="project2" data-scroll-reveal>
 			<img src="assets/img/250x250.gif" alt="Projet 2">
 			<h1>Titre projet 2</h1>
 			<h2>Poste occupé</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
 		</section>
-		<section id="project3">
+		<section id="project3" data-scroll-reveal>
 			<img src="assets/img/250x250.gif" alt="Projet 3">
 			<h1>Titre projet 3</h1>
 			<h2>Poste occupé</h2>
@@ -73,9 +73,10 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 		<p>Si je vous rejoins, voici ce qui vous arrivera :</p>
 		<p class="emphasize">gloire_et_fortune = exp(x)</p>
 
-		<img src="http://placehold.it/400x400" alt="Graphique">
+		
+		<canvas id="plot" width="500" height="500" data-scroll-reveal></canvas>
 
-		<img src="assets/img/cercle.jpg" alt="">
+		<img src="assets/img/cercle.jpg" alt="" data-scroll-reveal>
 
 	</section>
 
@@ -112,8 +113,10 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 	</section>
 
 
-
 	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/Chart.min.js"></script>
+	<script src="assets/js/scrollReveal.min.js" type="text/javascript"></script>
+	<script src="assets/js/in-viewport.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 

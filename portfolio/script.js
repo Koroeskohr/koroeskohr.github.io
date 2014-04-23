@@ -5,7 +5,7 @@ return check; }*/
 
 
 $(document).ready(function() {
-
+	$(window).scrollReveal = new scrollReveal();
     $(window).resize(function() {
         //if (!window.mobilecheck()){
 		$("header").height($(window).innerHeight());
@@ -16,6 +16,42 @@ $(document).ready(function() {
     })
         .trigger('resize');
 
+    var plot = document.getElementById('plot');
 
+	inViewport(plot, execPlot);
+	var ctx = plot.getContext("2d");
+	function execPlot() {
 
+		var options = {
+			bezierCurve:false,
+			pointDot:false,
+			datasetStrokeWidth : 6,
+			datasetFill:false,
+			scaleShowLabels:false,
+			animationSteps:150,
+
+			scaleShowGridLines : false
+
+		};
+
+		var data = {
+			labels : ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],
+			datasets : [
+				{
+					strokeColor : "rgba(255,0,0,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [0.01,0.36,0.84,1.48,2.35,3.52,5.11,7.24,10.13,14.02,19.28,26.38,35.96,48.89,66.35]
+				}
+			]
+		};
+
+		setTimeout(function(){
+			new Chart(ctx).Line(data,options);	
+		},100);
+		
+	}
 });
+
+
+
