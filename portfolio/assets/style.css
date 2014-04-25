@@ -414,7 +414,7 @@ header h2 {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* line 335, style.scss */
   header {
-    min-height: 800px;
+    min-height: 1080px;
   }
 
   /* line 338, style.scss */
