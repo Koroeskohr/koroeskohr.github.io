@@ -413,30 +413,35 @@ header h2 {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* line 335, style.scss */
+  header {
+    min-height: 800px;
+  }
+
+  /* line 338, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 337, style.scss */
+  /* line 340, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 344, style.scss */
+  /* line 347, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 350, style.scss */
+  /* line 353, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 358, style.scss */
+  /* line 361, style.scss */
   header div > img {
     margin-top: 10%;
   }
