@@ -169,11 +169,11 @@ header div > img {
 }
 /* line 78, style.scss */
 header div > img:hover {
-  -ms-transform: rotate(1.1);
+  -ms-transform: rotate(1);
   /* IE 9 */
-  -webkit-transform: rotate(1.1);
+  -webkit-transform: rotate(1);
   /* Chrome, Safari, Opera */
-  transform: rotate(1.1);
+  transform: rotate(1);
 }
 /* line 84, style.scss */
 header a {
@@ -384,7 +384,7 @@ header h2 {
   width: auto;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   margin-top: 0;
   margin-bottom: 3%;
   text-transform: uppercase;
