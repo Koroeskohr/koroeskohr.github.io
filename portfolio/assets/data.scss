@@ -81,3 +81,21 @@ $bleu : #030513;
     -webkit-transform: rotate($percent); /* Chrome, Safari, Opera */
     transform: rotate($percent);
 }
+
+@keyframes bgMove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@-webkit-keyframes bgMove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}

@@ -55,3 +55,26 @@
     content:"";
     position: absolute;
 }*/
+@keyframes bgMove {
+  /* line 86, data.scss */
+  from {
+    background-position: 0% 0%;
+  }
+
+  /* line 89, data.scss */
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@-webkit-keyframes bgMove {
+  /* line 95, data.scss */
+  from {
+    background-position: 0% 0%;
+  }
+
+  /* line 98, data.scss */
+  to {
+    background-position: 100% 100%;
+  }
+}

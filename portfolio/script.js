@@ -53,12 +53,12 @@ $(document).ready(function() {
 		
 	}
 
-	progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
-	progBar2 = circularProgressBar.init(100, 5, $("#skill2"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
+	progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);
+	progBar2 = circularProgressBar.init(100, 5, $("#skill2"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 60);
 	progBar3 = circularProgressBar.init(100, 5, $("#skill3"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
-	progBar4 = circularProgressBar.init(100, 5, $("#skill4"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
-	progBar5 = circularProgressBar.init(100, 5, $("#skill5"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
-	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
+	progBar4 = circularProgressBar.init(100, 5, $("#skill4"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 80);
+	progBar5 = circularProgressBar.init(100, 5, $("#skill5"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 90);
+	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 100);
 
 });
 

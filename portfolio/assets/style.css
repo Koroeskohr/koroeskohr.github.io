@@ -55,6 +55,30 @@
     content:"";
     position: absolute;
 }*/
+@keyframes bgMove {
+  /* line 86, data.scss */
+  from {
+    background-position: 0% 0%;
+  }
+
+  /* line 89, data.scss */
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@-webkit-keyframes bgMove {
+  /* line 95, data.scss */
+  from {
+    background-position: 0% 0%;
+  }
+
+  /* line 98, data.scss */
+  to {
+    background-position: 100% 100%;
+  }
+}
+
 /* line 3, style.scss */
 .abs-center {
   margin: auto;
@@ -219,127 +243,129 @@ header h2 {
 /* line 151, style.scss */
 #skills {
   background: url(img/geometry.png) repeat;
+  animation: bgMove 20s infinite;
+  -webkit-animation: bgMove 20s linear infinite;
   text-align: center;
 }
-/* line 154, style.scss */
+/* line 156, style.scss */
 #skills p {
   color: black;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3%;
 }
-/* line 159, style.scss */
+/* line 161, style.scss */
 #skills p.emphasize {
   font-family: RalewayBold;
   font-size: 3rem;
 }
-/* line 166, style.scss */
+/* line 168, style.scss */
 #skills span {
   display: block;
 }
-/* line 170, style.scss */
+/* line 172, style.scss */
 #skills strong {
   font-family: RalewayBold;
 }
-/* line 173, style.scss */
+/* line 175, style.scss */
 #skills > div {
   width: 90%;
   display: block;
   margin: 0 auto;
   margin-top: 10%;
 }
-/* line 180, style.scss */
+/* line 182, style.scss */
 #skills svg {
   display: inline-block;
   height: 200px;
   margin-right: 150px;
 }
-/* line 187, style.scss */
+/* line 189, style.scss */
 #skills #skillbars {
   /*figcaption {
   	width:30%;
   }*/
 }
-/* line 188, style.scss */
+/* line 190, style.scss */
 #skills #skillbars figure {
   display: inline-block;
   width: 25%;
 }
-/* line 197, style.scss */
+/* line 199, style.scss */
 #skills canvas {
   width: 80%;
   max-width: 600px;
 }
 
-/* line 204, style.scss */
+/* line 206, style.scss */
 #about {
   background: url(img/brickwall.png);
   overflow: hidden;
 }
-/* line 209, style.scss */
+/* line 211, style.scss */
 #about img {
   float: left;
 }
-/* line 215, style.scss */
+/* line 217, style.scss */
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1%;
 }
-/* line 220, style.scss */
+/* line 222, style.scss */
 #about h3 {
   margin-top: 0;
   font-size: 2rem;
 }
 
-/* line 228, style.scss */
+/* line 230, style.scss */
 #hobbies {
   background: url(img/dvd.jpg);
 }
-/* line 232, style.scss */
+/* line 234, style.scss */
 #hobbies p {
   width: 70%;
   margin: 1% auto;
   color: white;
   text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
 }
-/* line 241, style.scss */
+/* line 243, style.scss */
 #hobbies img {
   margin: 3% 0 5% 15%;
   opacity: 0.2;
 }
 
-/* line 247, style.scss */
+/* line 249, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 252, style.scss */
+/* line 254, style.scss */
 #contact form {
   width: 70%;
   margin: 0 auto;
 }
-/* line 258, style.scss */
+/* line 260, style.scss */
 #contact label {
   display: block;
   font-family: RalewayBold;
   color: white;
   margin-bottom: 0.5%;
 }
-/* line 264, style.scss */
+/* line 266, style.scss */
 #contact input {
   display: block;
   margin-bottom: 1%;
   width: 30%;
 }
-/* line 269, style.scss */
+/* line 271, style.scss */
 #contact textarea {
   display: block;
   width: 30%;
   height: 200px;
   margin-bottom: 5%;
 }
-/* line 276, style.scss */
+/* line 278, style.scss */
 #contact button {
   border: 0;
   font-family: RalewayExtraBold;
@@ -353,7 +379,7 @@ header h2 {
   margin-bottom: 10%;
 }
 
-/* line 293, style.scss */
+/* line 295, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
@@ -367,42 +393,42 @@ header h2 {
 }
 
 @media screen and (max-width: 400px) {
-  /* line 310, style.scss */
+  /* line 312, style.scss */
   h1 {
     line-height: 5rem;
   }
 
-  /* line 315, style.scss */
+  /* line 317, style.scss */
   header div > img {
     margin-top: 2%;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 326, style.scss */
+  /* line 328, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 328, style.scss */
+  /* line 330, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 335, style.scss */
+  /* line 337, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 341, style.scss */
+  /* line 343, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 349, style.scss */
+  /* line 351, style.scss */
   header div > img {
     margin-top: 10%;
   }
