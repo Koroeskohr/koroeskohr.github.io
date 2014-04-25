@@ -56,24 +56,24 @@
     position: absolute;
 }*/
 @keyframes bgMove {
-  /* line 86, D:/Web/spec/html/portfolio/assets/data.scss */
+  /* line 86, data.scss */
   from {
     background-position: 0px 0px;
   }
 
-  /* line 89, D:/Web/spec/html/portfolio/assets/data.scss */
+  /* line 89, data.scss */
   to {
     background-position: 824px 824px;
   }
 }
 
 @-webkit-keyframes bgMove {
-  /* line 95, D:/Web/spec/html/portfolio/assets/data.scss */
+  /* line 95, data.scss */
   from {
     background-position: 0px 0px;
   }
 
-  /* line 98, D:/Web/spec/html/portfolio/assets/data.scss */
+  /* line 98, data.scss */
   to {
     background-position: 824px 824px;
   }
@@ -169,11 +169,11 @@ header div > img {
 }
 /* line 78, style.scss */
 header div > img:hover {
-  -ms-transform: rotate(1);
+  -ms-transform: rotate(1.1);
   /* IE 9 */
-  -webkit-transform: rotate(1);
+  -webkit-transform: rotate(1.1);
   /* Chrome, Safari, Opera */
-  transform: rotate(1);
+  transform: rotate(1.1);
 }
 /* line 84, style.scss */
 header a {
@@ -384,7 +384,7 @@ header h2 {
   width: auto;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: 0;
   margin-bottom: 3%;
   text-transform: uppercase;
