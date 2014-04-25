@@ -74,6 +74,7 @@ header{
 			filter: drop-shadow(5px 5px 5px #111);
 			margin-top : 7%;
 			height:50%;	
+			min-height: 200px;
 			//max-width: 500px;
 			transition:0.5s;
 			&:hover {
@@ -321,6 +322,11 @@ overflow:hidden;
 	}
 }
 
+@media screen and (max-width: 500px) {
+	header h1 {
+		font-size: 4rem;
+	}
+}
 
 
 @media 

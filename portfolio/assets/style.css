@@ -166,207 +166,208 @@ header div > img {
   filter: drop-shadow(5px 5px 5px #111111);
   margin-top: 7%;
   height: 50%;
+  min-height: 200px;
   transition: 0.5s;
 }
-/* line 79, style.scss */
+/* line 80, style.scss */
 header div > img:hover {
-  -ms-transform: rotate(1);
+  -ms-transform: rotate(1.1);
   /* IE 9 */
-  -webkit-transform: rotate(1);
+  -webkit-transform: rotate(1.1);
   /* Chrome, Safari, Opera */
-  transform: rotate(1);
+  transform: rotate(1.1);
 }
-/* line 85, style.scss */
+/* line 86, style.scss */
 header a {
   text-decoration: none;
 }
-/* line 89, style.scss */
+/* line 90, style.scss */
 header ul {
   margin-top: 8%;
 }
-/* line 92, style.scss */
+/* line 93, style.scss */
 header li {
   display: inline;
   list-style-type: none;
   margin-right: 3%;
 }
-/* line 98, style.scss */
+/* line 99, style.scss */
 header h1, header h2 {
   color: white;
   font-variant: small-caps;
 }
-/* line 104, style.scss */
+/* line 105, style.scss */
 header p {
   color: white;
 }
-/* line 108, style.scss */
+/* line 109, style.scss */
 header h1 {
   font-size: 5rem;
   margin-bottom: 0;
   margin-top: 3%;
 }
-/* line 114, style.scss */
+/* line 115, style.scss */
 header h2 {
   font-size: 3rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 122, style.scss */
+/* line 123, style.scss */
 #social img {
   width: 60px;
   -webkit-filter: drop-shadow(2px 2px 2px #111111);
   filter: drop-shadow(2px 2px 2px #111111);
 }
 
-/* line 130, style.scss */
+/* line 131, style.scss */
 #projects {
   background: url(img/i.o2.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 132, style.scss */
+/* line 133, style.scss */
 #projects h1, #projects h2, #projects p {
   text-shadow: #000000 0px 0px 2px;
   color: white;
 }
-/* line 141, style.scss */
+/* line 142, style.scss */
 #projects section {
   clear: both;
   padding: 0 15%;
 }
-/* line 145, style.scss */
+/* line 146, style.scss */
 #projects section img {
   float: left;
   margin: 0 2% 2% 0;
 }
 
-/* line 152, style.scss */
+/* line 153, style.scss */
 #skills {
   background: url(img/geometry.png) repeat;
   animation: bgMove 30s infinite;
   -webkit-animation: bgMove 30s linear infinite;
   text-align: center;
 }
-/* line 157, style.scss */
+/* line 158, style.scss */
 #skills p {
   color: black;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3%;
 }
-/* line 162, style.scss */
+/* line 163, style.scss */
 #skills p.emphasize {
   font-family: RalewayBold;
   font-size: 3rem;
 }
-/* line 169, style.scss */
+/* line 170, style.scss */
 #skills span {
   display: block;
 }
-/* line 173, style.scss */
+/* line 174, style.scss */
 #skills strong {
   font-family: RalewayBold;
 }
-/* line 176, style.scss */
+/* line 177, style.scss */
 #skills > div {
   width: 90%;
   display: block;
   margin: 0 auto;
   margin-top: 10%;
 }
-/* line 183, style.scss */
+/* line 184, style.scss */
 #skills svg {
   display: inline-block;
   height: 200px;
   margin-right: 150px;
 }
-/* line 190, style.scss */
+/* line 191, style.scss */
 #skills #skillbars {
   /*figcaption {
   	width:30%;
   }*/
 }
-/* line 191, style.scss */
+/* line 192, style.scss */
 #skills #skillbars figure {
   display: inline-block;
   width: 25%;
 }
-/* line 200, style.scss */
+/* line 201, style.scss */
 #skills canvas {
   width: 80%;
   max-width: 600px;
 }
 
-/* line 207, style.scss */
+/* line 208, style.scss */
 #about {
   background: url(img/brickwall.png);
   overflow: hidden;
 }
-/* line 212, style.scss */
+/* line 213, style.scss */
 #about img {
   float: left;
 }
-/* line 218, style.scss */
+/* line 219, style.scss */
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1%;
 }
-/* line 223, style.scss */
+/* line 224, style.scss */
 #about h3 {
   margin-top: 0;
   font-size: 2rem;
 }
 
-/* line 231, style.scss */
+/* line 232, style.scss */
 #hobbies {
   background: url(img/dvd.jpg);
 }
-/* line 235, style.scss */
+/* line 236, style.scss */
 #hobbies p {
   width: 70%;
   margin: 1% auto;
   color: white;
   text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
 }
-/* line 244, style.scss */
+/* line 245, style.scss */
 #hobbies img {
   margin: 3% 0 5% 15%;
   opacity: 0.2;
 }
 
-/* line 250, style.scss */
+/* line 251, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 255, style.scss */
+/* line 256, style.scss */
 #contact form {
   width: 70%;
   margin: 0 auto;
 }
-/* line 261, style.scss */
+/* line 262, style.scss */
 #contact label {
   display: block;
   font-family: RalewayBold;
   color: white;
   margin-bottom: 0.5%;
 }
-/* line 267, style.scss */
+/* line 268, style.scss */
 #contact input {
   display: block;
   margin-bottom: 1%;
   width: 30%;
 }
-/* line 272, style.scss */
+/* line 273, style.scss */
 #contact textarea {
   display: block;
   width: 30%;
   height: 200px;
   margin-bottom: 5%;
 }
-/* line 279, style.scss */
+/* line 280, style.scss */
 #contact button {
   border: 0;
   font-family: RalewayExtraBold;
@@ -380,12 +381,12 @@ header h2 {
   margin-bottom: 10%;
 }
 
-/* line 296, style.scss */
+/* line 297, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: 0;
   margin-bottom: 3%;
   text-transform: uppercase;
@@ -394,42 +395,48 @@ header h2 {
 }
 
 @media screen and (max-width: 400px) {
-  /* line 313, style.scss */
+  /* line 314, style.scss */
   h1 {
     line-height: 5rem;
   }
 
-  /* line 318, style.scss */
+  /* line 319, style.scss */
   header div > img {
     margin-top: 2%;
   }
 }
+@media screen and (max-width: 500px) {
+  /* line 326, style.scss */
+  header h1 {
+    font-size: 4rem;
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 329, style.scss */
+  /* line 335, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 331, style.scss */
+  /* line 337, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 338, style.scss */
+  /* line 344, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 344, style.scss */
+  /* line 350, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 352, style.scss */
+  /* line 358, style.scss */
   header div > img {
     margin-top: 10%;
   }
