@@ -187,10 +187,16 @@ header{
 	#skillbars {
 		figure {
 			display:inline-block;
+			width : 25%;
 		}
-		figcaption {
+		/*figcaption {
 			width:30%;
-		}
+		}*/
+	}
+
+	canvas {
+		width:80%;
+		max-width: 600px;
 	}
 
 }

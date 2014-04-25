@@ -13,6 +13,7 @@ $(document).ready(function() {
 		//}
 	
         $("header>div>img").height($(window).innerHeight() / 2.5);
+        $("#skills canvas").width($(window).innerWidth()*0.8);
     })
         .trigger('resize');
 
