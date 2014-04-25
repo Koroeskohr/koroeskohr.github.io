@@ -58,23 +58,23 @@
 @keyframes bgMove {
   /* line 86, data.scss */
   from {
-    background-position: 0% 0%;
+    background-position: 0px 0px;
   }
 
   /* line 89, data.scss */
   to {
-    background-position: 100% 100%;
+    background-position: 824px 824px;
   }
 }
 
 @-webkit-keyframes bgMove {
   /* line 95, data.scss */
   from {
-    background-position: 0% 0%;
+    background-position: 0px 0px;
   }
 
   /* line 98, data.scss */
   to {
-    background-position: 100% 100%;
+    background-position: 824px 824px;
   }
 }
