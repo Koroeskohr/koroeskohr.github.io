@@ -17,6 +17,9 @@ $(document).ready(function() {
     })
         .trigger('resize');
 
+    $("#word1, #word2, #word3").on("animationend",function(){
+    	$("#word1, #word2, #word3").hide();
+    });
     var plot = document.getElementById('plot');
 
 	inViewport(plot, execPlot);

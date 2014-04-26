@@ -162,18 +162,31 @@ header{
 		margin-bottom: 3%;
 		&.emphasize {
 			font-family: RalewayBold;
-			font-size: 3rem;
+			font-size: 2.5rem;
 
 		}
 	}
 
-	span {
-		display:block;
+	#rotation {
+		display:inline-block;
+		position:relative;
+
+		
+		font-family: RalewayBold;
+		font-size: 3rem;
+		span {
+			text-align: center;
+			margin:auto;
+		}
+
 	}
+
+	
 
 	strong {
 		font-family: RalewayBold;
 	}
+
 	&>div {
 		width:90%;
 		display:block;
@@ -203,7 +216,10 @@ header{
 		max-width: 600px;
 	}
 
+
 }
+
+
 
 #about {
 background: url(img/brickwall.png) ;
@@ -333,7 +349,7 @@ overflow:hidden;
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
 	header {
-		min-height:1300px;
+		min-height:1900px;
 	}
 	#social {
 		margin-top: 20%;

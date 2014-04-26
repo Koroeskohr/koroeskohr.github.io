@@ -79,6 +79,168 @@
   }
 }
 
+/* line 105, data.scss */
+.word {
+  /*animation:rotX 3s linear infinite;*/
+  display: inline-block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  width: 80%;
+}
+
+/* line 122, data.scss */
+#word1 {
+  -webkit-animation: rotX1 8s linear;
+}
+
+/* line 127, data.scss */
+#word2 {
+  -webkit-animation: rotX2 8s linear;
+}
+
+/* line 132, data.scss */
+#word3 {
+  -webkit-animation: rotX3 8s linear;
+}
+
+/* line 137, data.scss */
+#word4 {
+  -webkit-animation: rotX4 8s linear;
+}
+
+/*@keyframes rotX{
+  from {
+    transform:rotateX(0);
+  }
+  
+  to {
+    transform:rotateX(180deg);
+  }
+}*/
+@-webkit-keyframes rotX1 {
+  /* line 152, data.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 155, data.scss */
+  10% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 159, data.scss */
+  20% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 163, data.scss */
+  50% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 167, data.scss */
+  75% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 172, data.scss */
+  100% {
+    -webkit-transform: rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes rotX2 {
+  /* line 178, data.scss */
+  0% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 182, data.scss */
+  10% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 187, data.scss */
+  30% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 191, data.scss */
+  40% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 195, data.scss */
+  75% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 199, data.scss */
+  100% {
+    -webkit-transform: rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes rotX3 {
+  /* line 205, data.scss */
+  0% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 209, data.scss */
+  25% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 213, data.scss */
+  35% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 218, data.scss */
+  45% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 222, data.scss */
+  60% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 226, data.scss */
+  100% {
+    -webkit-transform: rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes rotX4 {
+  /* line 232, data.scss */
+  0% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 236, data.scss */
+  25% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 240, data.scss */
+  50% {
+    -webkit-transform: rotateX(92deg);
+  }
+
+  /* line 244, data.scss */
+  80% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 249, data.scss */
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+
 /* line 3, style.scss */
 .abs-center {
   margin: auto;
@@ -171,11 +333,11 @@ header div > img {
 }
 /* line 80, style.scss */
 header div > img:hover {
-  -ms-transform: rotate(1.1);
+  -ms-transform: rotate(1);
   /* IE 9 */
-  -webkit-transform: rotate(1.1);
+  -webkit-transform: rotate(1);
   /* Chrome, Safari, Opera */
-  transform: rotate(1.1);
+  transform: rotate(1);
 }
 /* line 86, style.scss */
 header a {
@@ -259,115 +421,123 @@ header h2 {
 /* line 163, style.scss */
 #skills p.emphasize {
   font-family: RalewayBold;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 /* line 170, style.scss */
-#skills span {
-  display: block;
+#skills #rotation {
+  display: inline-block;
+  position: relative;
+  font-family: RalewayBold;
+  font-size: 3rem;
 }
-/* line 174, style.scss */
+/* line 177, style.scss */
+#skills #rotation span {
+  text-align: center;
+  margin: auto;
+}
+/* line 186, style.scss */
 #skills strong {
   font-family: RalewayBold;
 }
-/* line 177, style.scss */
+/* line 190, style.scss */
 #skills > div {
   width: 90%;
   display: block;
   margin: 0 auto;
   margin-top: 10%;
 }
-/* line 184, style.scss */
+/* line 197, style.scss */
 #skills svg {
   display: inline-block;
   height: 200px;
   margin-right: 150px;
 }
-/* line 191, style.scss */
+/* line 204, style.scss */
 #skills #skillbars {
   /*figcaption {
   	width:30%;
   }*/
 }
-/* line 192, style.scss */
+/* line 205, style.scss */
 #skills #skillbars figure {
   display: inline-block;
   width: 25%;
 }
-/* line 201, style.scss */
+/* line 214, style.scss */
 #skills canvas {
   width: 80%;
   max-width: 600px;
 }
 
-/* line 208, style.scss */
+/* line 224, style.scss */
 #about {
   background: url(img/brickwall.png);
   overflow: hidden;
 }
-/* line 213, style.scss */
+/* line 229, style.scss */
 #about img {
   float: left;
 }
-/* line 219, style.scss */
+/* line 235, style.scss */
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1%;
 }
-/* line 224, style.scss */
+/* line 240, style.scss */
 #about h3 {
   margin-top: 0;
   font-size: 2rem;
 }
 
-/* line 232, style.scss */
+/* line 248, style.scss */
 #hobbies {
   background: url(img/dvd.jpg);
 }
-/* line 236, style.scss */
+/* line 252, style.scss */
 #hobbies p {
   width: 70%;
   margin: 1% auto;
   color: white;
   text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
 }
-/* line 245, style.scss */
+/* line 261, style.scss */
 #hobbies img {
   margin: 3% 0 5% 15%;
   opacity: 0.2;
 }
 
-/* line 251, style.scss */
+/* line 267, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 256, style.scss */
+/* line 272, style.scss */
 #contact form {
   width: 70%;
   margin: 0 auto;
 }
-/* line 262, style.scss */
+/* line 278, style.scss */
 #contact label {
   display: block;
   font-family: RalewayBold;
   color: white;
   margin-bottom: 0.5%;
 }
-/* line 268, style.scss */
+/* line 284, style.scss */
 #contact input {
   display: block;
   margin-bottom: 1%;
   width: 30%;
 }
-/* line 273, style.scss */
+/* line 289, style.scss */
 #contact textarea {
   display: block;
   width: 30%;
   height: 200px;
   margin-bottom: 5%;
 }
-/* line 280, style.scss */
+/* line 296, style.scss */
 #contact button {
   border: 0;
   font-family: RalewayExtraBold;
@@ -381,12 +551,12 @@ header h2 {
   margin-bottom: 10%;
 }
 
-/* line 297, style.scss */
+/* line 313, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   margin-top: 0;
   margin-bottom: 3%;
   text-transform: uppercase;
@@ -395,53 +565,53 @@ header h2 {
 }
 
 @media screen and (max-width: 400px) {
-  /* line 314, style.scss */
+  /* line 330, style.scss */
   h1 {
     line-height: 5rem;
   }
 
-  /* line 319, style.scss */
+  /* line 335, style.scss */
   header div > img {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 326, style.scss */
+  /* line 342, style.scss */
   header h1 {
     font-size: 4rem;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 335, style.scss */
+  /* line 351, style.scss */
   header {
-    min-height: 1300px;
+    min-height: 1900px;
   }
 
-  /* line 338, style.scss */
+  /* line 354, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 340, style.scss */
+  /* line 356, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 347, style.scss */
+  /* line 363, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 353, style.scss */
+  /* line 369, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 361, style.scss */
+  /* line 377, style.scss */
   header div > img {
     margin-top: 10%;
   }
