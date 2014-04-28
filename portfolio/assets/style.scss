@@ -57,7 +57,7 @@ p {
 
 header{
 	height:100%;
-	min-height:550px;
+	min-height:768px;
 	text-align: center;
 	background-image: url(img/fond2.jpg);
 	background-size: cover;
@@ -160,16 +160,31 @@ header{
 		font-size: 2rem;
 		text-align: center;
 		margin-bottom: 3%;
-		&.emphasize {
-			font-family: RalewayBold;
+		&.code {
+			font-family: "Source Code Pro","Courier New";
 			font-size: 2.5rem;
 
 		}
+
+
+		
 	}
+
+	.margin-top
+	{
+		margin-top: 10%;
+	}
+
+	.no-margin-bot {
+		margin-bottom: 0;
+	} 
+
+
 
 	#rotation {
 		display:inline-block;
 		position:relative;
+		margin-top:0;
 
 		
 		font-family: RalewayBold;
@@ -314,7 +329,7 @@ overflow:hidden;
 		width:auto;
 		text-align:center;
 		color:white;
-		background-color: rgba(#000,0.6);
+		background-color: rgba(0,0,0,0.6);
 
 		//border : solid 2px $bleu;
 		margin-top: 0;
@@ -349,7 +364,7 @@ overflow:hidden;
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
 	header {
-		min-height:1900px;
+		min-height:1700px;
 	}
 	#social {
 		margin-top: 20%;

@@ -47,13 +47,13 @@
 }
 
 /*@mixin sprite ($path, $x : 0px, $y : 0px, $width:128px, $height:128px) {
-    background-image: url($path);
-    background-position: $x $y;
-    background-repeat: no-repeat;
-    width : $width;
-    height : $height;
-    content:"";
-    position: absolute;
+	background-image: url($path);
+	background-position: $x $y;
+	background-repeat: no-repeat;
+	width : $width;
+	height : $height;
+	content:"";
+	position: absolute;
 }*/
 @keyframes bgMove {
   /* line 86, data.scss */
@@ -87,155 +87,160 @@
   -webkit-backface-visibility: hidden;
   position: absolute;
   width: 80%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
 }
 
-/* line 122, data.scss */
-#word1 {
+/* line 125, data.scss */
+.start #word1 {
   -webkit-animation: rotX1 8s linear;
 }
 
-/* line 127, data.scss */
-#word2 {
+/* line 129, data.scss */
+.start #word2 {
   -webkit-animation: rotX2 8s linear;
 }
 
-/* line 132, data.scss */
-#word3 {
+/* line 134, data.scss */
+.start #word3 {
   -webkit-animation: rotX3 8s linear;
 }
 
-/* line 137, data.scss */
-#word4 {
+/* line 139, data.scss */
+.start #word4 {
   -webkit-animation: rotX4 8s linear;
 }
 
 /*@keyframes rotX{
   from {
-    transform:rotateX(0);
+	transform:rotateX(0);
   }
   
   to {
-    transform:rotateX(180deg);
+	transform:rotateX(180deg);
   }
 }*/
 @-webkit-keyframes rotX1 {
-  /* line 152, data.scss */
+  /* line 154, data.scss */
   0% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 155, data.scss */
+  /* line 157, data.scss */
   10% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 159, data.scss */
+  /* line 161, data.scss */
   20% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 163, data.scss */
+  /* line 165, data.scss */
   50% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 167, data.scss */
+  /* line 169, data.scss */
   75% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 172, data.scss */
+  /* line 174, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX2 {
-  /* line 178, data.scss */
+  /* line 180, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 182, data.scss */
+  /* line 184, data.scss */
   10% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 187, data.scss */
+  /* line 189, data.scss */
   30% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 191, data.scss */
+  /* line 193, data.scss */
   40% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 195, data.scss */
+  /* line 197, data.scss */
   75% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 199, data.scss */
+  /* line 201, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX3 {
-  /* line 205, data.scss */
+  /* line 207, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 209, data.scss */
+  /* line 211, data.scss */
   25% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 213, data.scss */
+  /* line 215, data.scss */
   35% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 218, data.scss */
+  /* line 220, data.scss */
   45% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 222, data.scss */
+  /* line 224, data.scss */
   60% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 226, data.scss */
+  /* line 228, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX4 {
-  /* line 232, data.scss */
+  /* line 234, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 236, data.scss */
+  /* line 238, data.scss */
   25% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 240, data.scss */
+  /* line 242, data.scss */
   50% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 244, data.scss */
+  /* line 246, data.scss */
   80% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 249, data.scss */
+  /* line 251, data.scss */
   100% {
     -webkit-transform: rotateX(0deg);
   }

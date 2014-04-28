@@ -21,8 +21,10 @@ $(document).ready(function() {
     	$("#word1, #word2, #word3").hide();
     });
     var plot = document.getElementById('plot');
-
+    var skillRot = document.getElementById('rotation');
 	inViewport(plot, execPlot);
+	inViewport(skillRot, skillCssAnimStart);
+
 	var ctx = plot.getContext("2d");
 	function execPlot() {
 
@@ -54,6 +56,13 @@ $(document).ready(function() {
 			new Chart(ctx).Line(data,options);	
 		},100);
 		
+	}
+
+	function skillCssAnimStart() {
+		if (!$("#rotation").hasClass('start'))
+		{
+			$("#rotation").addClass('start');
+		}
 	}
 
 	progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);

@@ -47,13 +47,13 @@
 }
 
 /*@mixin sprite ($path, $x : 0px, $y : 0px, $width:128px, $height:128px) {
-    background-image: url($path);
-    background-position: $x $y;
-    background-repeat: no-repeat;
-    width : $width;
-    height : $height;
-    content:"";
-    position: absolute;
+	background-image: url($path);
+	background-position: $x $y;
+	background-repeat: no-repeat;
+	width : $width;
+	height : $height;
+	content:"";
+	position: absolute;
 }*/
 @keyframes bgMove {
   /* line 86, data.scss */
@@ -87,155 +87,160 @@
   -webkit-backface-visibility: hidden;
   position: absolute;
   width: 80%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
 }
 
-/* line 122, data.scss */
-#word1 {
+/* line 125, data.scss */
+.start #word1 {
   -webkit-animation: rotX1 8s linear;
 }
 
-/* line 127, data.scss */
-#word2 {
+/* line 129, data.scss */
+.start #word2 {
   -webkit-animation: rotX2 8s linear;
 }
 
-/* line 132, data.scss */
-#word3 {
+/* line 134, data.scss */
+.start #word3 {
   -webkit-animation: rotX3 8s linear;
 }
 
-/* line 137, data.scss */
-#word4 {
+/* line 139, data.scss */
+.start #word4 {
   -webkit-animation: rotX4 8s linear;
 }
 
 /*@keyframes rotX{
   from {
-    transform:rotateX(0);
+	transform:rotateX(0);
   }
   
   to {
-    transform:rotateX(180deg);
+	transform:rotateX(180deg);
   }
 }*/
 @-webkit-keyframes rotX1 {
-  /* line 152, data.scss */
+  /* line 154, data.scss */
   0% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 155, data.scss */
+  /* line 157, data.scss */
   10% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 159, data.scss */
+  /* line 161, data.scss */
   20% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 163, data.scss */
+  /* line 165, data.scss */
   50% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 167, data.scss */
+  /* line 169, data.scss */
   75% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 172, data.scss */
+  /* line 174, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX2 {
-  /* line 178, data.scss */
+  /* line 180, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 182, data.scss */
+  /* line 184, data.scss */
   10% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 187, data.scss */
+  /* line 189, data.scss */
   30% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 191, data.scss */
+  /* line 193, data.scss */
   40% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 195, data.scss */
+  /* line 197, data.scss */
   75% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 199, data.scss */
+  /* line 201, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX3 {
-  /* line 205, data.scss */
+  /* line 207, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 209, data.scss */
+  /* line 211, data.scss */
   25% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 213, data.scss */
+  /* line 215, data.scss */
   35% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 218, data.scss */
+  /* line 220, data.scss */
   45% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 222, data.scss */
+  /* line 224, data.scss */
   60% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 226, data.scss */
+  /* line 228, data.scss */
   100% {
     -webkit-transform: rotateX(92deg);
   }
 }
 
 @-webkit-keyframes rotX4 {
-  /* line 232, data.scss */
+  /* line 234, data.scss */
   0% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 236, data.scss */
+  /* line 238, data.scss */
   25% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 240, data.scss */
+  /* line 242, data.scss */
   50% {
     -webkit-transform: rotateX(92deg);
   }
 
-  /* line 244, data.scss */
+  /* line 246, data.scss */
   80% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 249, data.scss */
+  /* line 251, data.scss */
   100% {
     -webkit-transform: rotateX(0deg);
   }
@@ -310,7 +315,7 @@ p {
 /* line 58, style.scss */
 header {
   height: 100%;
-  min-height: 550px;
+  min-height: 768px;
   text-align: center;
   background-image: url(img/fond2.jpg);
   background-size: cover;
@@ -419,125 +424,134 @@ header h2 {
   margin-bottom: 3%;
 }
 /* line 163, style.scss */
-#skills p.emphasize {
-  font-family: RalewayBold;
+#skills p.code {
+  font-family: "Source Code Pro","Courier New";
   font-size: 2.5rem;
 }
-/* line 170, style.scss */
+/* line 174, style.scss */
+#skills .margin-top {
+  margin-top: 10%;
+}
+/* line 178, style.scss */
+#skills .no-margin-bot {
+  margin-bottom: 0;
+}
+/* line 184, style.scss */
 #skills #rotation {
   display: inline-block;
   position: relative;
+  margin-top: 0;
   font-family: RalewayBold;
   font-size: 3rem;
 }
-/* line 177, style.scss */
+/* line 192, style.scss */
 #skills #rotation span {
   text-align: center;
   margin: auto;
 }
-/* line 186, style.scss */
+/* line 201, style.scss */
 #skills strong {
   font-family: RalewayBold;
 }
-/* line 190, style.scss */
+/* line 205, style.scss */
 #skills > div {
   width: 90%;
   display: block;
   margin: 0 auto;
   margin-top: 10%;
 }
-/* line 197, style.scss */
+/* line 212, style.scss */
 #skills svg {
   display: inline-block;
   height: 200px;
   margin-right: 150px;
 }
-/* line 204, style.scss */
+/* line 219, style.scss */
 #skills #skillbars {
   /*figcaption {
   	width:30%;
   }*/
 }
-/* line 205, style.scss */
+/* line 220, style.scss */
 #skills #skillbars figure {
   display: inline-block;
   width: 25%;
 }
-/* line 214, style.scss */
+/* line 229, style.scss */
 #skills canvas {
   width: 80%;
   max-width: 600px;
 }
 
-/* line 224, style.scss */
+/* line 239, style.scss */
 #about {
   background: url(img/brickwall.png);
   overflow: hidden;
 }
-/* line 229, style.scss */
+/* line 244, style.scss */
 #about img {
   float: left;
 }
-/* line 235, style.scss */
+/* line 250, style.scss */
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1%;
 }
-/* line 240, style.scss */
+/* line 255, style.scss */
 #about h3 {
   margin-top: 0;
   font-size: 2rem;
 }
 
-/* line 248, style.scss */
+/* line 263, style.scss */
 #hobbies {
   background: url(img/dvd.jpg);
 }
-/* line 252, style.scss */
+/* line 267, style.scss */
 #hobbies p {
   width: 70%;
   margin: 1% auto;
   color: white;
   text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
 }
-/* line 261, style.scss */
+/* line 276, style.scss */
 #hobbies img {
   margin: 3% 0 5% 15%;
   opacity: 0.2;
 }
 
-/* line 267, style.scss */
+/* line 282, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 272, style.scss */
+/* line 287, style.scss */
 #contact form {
   width: 70%;
   margin: 0 auto;
 }
-/* line 278, style.scss */
+/* line 293, style.scss */
 #contact label {
   display: block;
   font-family: RalewayBold;
   color: white;
   margin-bottom: 0.5%;
 }
-/* line 284, style.scss */
+/* line 299, style.scss */
 #contact input {
   display: block;
   margin-bottom: 1%;
   width: 30%;
 }
-/* line 289, style.scss */
+/* line 304, style.scss */
 #contact textarea {
   display: block;
   width: 30%;
   height: 200px;
   margin-bottom: 5%;
 }
-/* line 296, style.scss */
+/* line 311, style.scss */
 #contact button {
   border: 0;
   font-family: RalewayExtraBold;
@@ -551,7 +565,7 @@ header h2 {
   margin-bottom: 10%;
 }
 
-/* line 313, style.scss */
+/* line 328, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
@@ -565,53 +579,53 @@ header h2 {
 }
 
 @media screen and (max-width: 400px) {
-  /* line 330, style.scss */
+  /* line 345, style.scss */
   h1 {
     line-height: 5rem;
   }
 
-  /* line 335, style.scss */
+  /* line 350, style.scss */
   header div > img {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 342, style.scss */
+  /* line 357, style.scss */
   header h1 {
     font-size: 4rem;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 351, style.scss */
+  /* line 366, style.scss */
   header {
-    min-height: 1900px;
+    min-height: 1700px;
   }
 
-  /* line 354, style.scss */
+  /* line 369, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 356, style.scss */
+  /* line 371, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 363, style.scss */
+  /* line 378, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 369, style.scss */
+  /* line 384, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 377, style.scss */
+  /* line 392, style.scss */
   header div > img {
     margin-top: 10%;
   }
