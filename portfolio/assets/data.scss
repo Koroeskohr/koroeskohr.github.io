@@ -97,7 +97,7 @@ $bleu : #030513;
   }
   to {
 	background-position: 824px 824px;
-  }
+  } 
 }
 
 
@@ -116,41 +116,34 @@ $bleu : #030513;
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
-	white-space: nowrap;
 }
 
 
 
 .start #word1
 {
-  -webkit-animation:rotX1 8s linear ;
+  -webkit-animation:wrotX1 8s linear ;
+  animation:rotX1 8s linear ;
 }
 
 .start #word2{
-  -webkit-animation:rotX2 8s linear ;
+  -webkit-animation:wrotX2 8s linear ;
+  animation:rotX2 8s linear ;
 }
 
 .start #word3
 {
-  -webkit-animation:rotX3 8s linear ;
+  -webkit-animation:wrotX3 8s linear ;
+  animation:rotX3 8s linear ;
 }
 
 .start #word4
 {
-  -webkit-animation:rotX4 8s linear ;
+  -webkit-animation:wrotX4 8s linear ;
+  animation:rotX4 8s linear ;
 }
 
-/*@keyframes rotX{
-  from {
-	transform:rotateX(0);
-  }
-  
-  to {
-	transform:rotateX(180deg);
-  }
-}*/
-
-@-webkit-keyframes rotX1 {
+@-webkit-keyframes wrotX1 {
   0% {
 	-webkit-transform:rotateX(0deg);
   }
@@ -176,7 +169,33 @@ $bleu : #030513;
   }
 }
 
-@-webkit-keyframes rotX2 {
+@keyframes rotX1 {
+  0% {
+	transform:rotateX(0deg);
+  }
+  10% {
+	transform:rotateX(0deg);
+  }
+  
+  20% {
+	transform:rotateX(92deg);
+  }
+   
+  50% {
+	transform:rotateX(92deg);
+  }
+  
+  75% {
+	transform:rotateX(92deg);
+  }
+  
+  
+  100% {
+	transform:rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes wrotX2 {
   0% {
 	-webkit-transform:rotateX(92deg);
   }
@@ -203,7 +222,34 @@ $bleu : #030513;
   }
 }
 
-@-webkit-keyframes rotX3 {
+@keyframes rotX2 {
+  0% {
+	transform:rotateX(92deg);
+  }
+
+  10% {
+	transform:rotateX(92deg);
+
+  }
+  
+  30% {
+	transform:rotateX(0deg);
+  }
+  
+  40% {
+	transform:rotateX(92deg);
+  }
+  
+  75% {
+	transform:rotateX(92deg);
+  }
+  
+  100% {
+	transform:rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes wrotX3 {
   0% {
 	-webkit-transform:rotateX(92deg);
   }
@@ -230,7 +276,34 @@ $bleu : #030513;
   }
 }
 
-@-webkit-keyframes rotX4 {
+@keyframes rotX3 {
+  0% {
+	transform:rotateX(92deg);
+  }
+  
+  25% {
+	transform:rotateX(92deg);
+  }
+
+  35% {
+	transform:rotateX(92deg);
+
+  }
+  
+	45% {
+	transform:rotateX(0deg);
+  }
+  
+  60% {
+	transform:rotateX(92deg);
+  }
+  
+  100% {
+	transform:rotateX(92deg);
+  }
+}
+
+@-webkit-keyframes wrotX4 {
   0% {
 	-webkit-transform:rotateX(92deg);
   }
@@ -253,3 +326,70 @@ $bleu : #030513;
   }
 }
 
+@keyframes rotX4 {
+  0% {
+	transform:rotateX(92deg);
+  }
+  
+  25% {
+	transform:rotateX(92deg);
+  }
+  
+  50% {
+	transform:rotateX(92deg);
+  }
+  
+  80% {
+	transform:rotateX(0deg);
+  }
+  
+
+  100% {
+	transform:rotateX(0deg);
+  }
+}
+
+
+//ANIMATE.CSS (https://github.com/daneden/animate.css) PULSE
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration:1s;
+}

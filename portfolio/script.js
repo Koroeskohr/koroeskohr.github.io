@@ -13,22 +13,26 @@ $(document).ready(function() {
 		//}
 	
         $("header>div>img").height($(window).innerHeight() / 2.5);
-        $("#skills canvas").width($(window).innerWidth()*0.8);
+        $("#skills>canvas").width($(window).innerWidth()*0.8);
     })
         .trigger('resize');
+
+    $(".word").css("display","inline-block");
 
     $("#word1, #word2, #word3").on("animationend",function(){
     	$("#word1, #word2, #word3").hide();
     });
     var plot = document.getElementById('plot');
     var skillRot = document.getElementById('rotation');
-	inViewport(plot, execPlot);
+	inViewport(plot,{offset:00},execPlot);
 	inViewport(skillRot, skillCssAnimStart);
 
 	var ctx = plot.getContext("2d");
 	function execPlot() {
 
-		var options = {
+	var options = {};
+	if (/*document.cookie === "plot"*/true) {
+		options = {
 			bezierCurve:false,
 			pointDot:false,
 			datasetStrokeWidth : 6,
@@ -36,16 +40,33 @@ $(document).ready(function() {
 			scaleShowLabels:false,
 			animationSteps:150,
 
+			scaleShowGridLines : false,
+			onAnimationComplete : function () {
+				$("#exp").addClass('pulse animated');
+				document.cookie = "plot";
+			}
+		};
+	}
+	else {
+		options = {
+			bezierCurve:false,
+			pointDot:false,
+			datasetStrokeWidth : 6,
+			datasetFill:false,
+			scaleShowLabels:false,
+			animation:false,
 			scaleShowGridLines : false
-
 		};
 
+	}
+		
+
 		var data = {
-			labels : ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],
+			labels : ["","","","","","","","","","","","","","",""],
 			datasets : [
 				{
-					strokeColor : "rgba(255,0,0,1)",
-					pointColor : "rgba(220,220,220,1)",
+					strokeColor : "rgba(255,103,0,1)",
+					pointColor : "rgba(220,220,220,0)",
 					pointStrokeColor : "#fff",
 					data : [0.01,0.36,0.84,1.48,2.35,3.52,5.11,7.24,10.13,14.02,19.28,26.38,35.96,48.89,66.35]
 				}
@@ -54,7 +75,7 @@ $(document).ready(function() {
 
 		setTimeout(function(){
 			new Chart(ctx).Line(data,options);	
-		},100);
+		},400);
 		
 	}
 
@@ -65,13 +86,26 @@ $(document).ready(function() {
 		}
 	}
 
-	progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);
+	/*progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);
 	progBar2 = circularProgressBar.init(100, 5, $("#skill2"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 60);
 	progBar3 = circularProgressBar.init(100, 5, $("#skill3"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
 	progBar4 = circularProgressBar.init(100, 5, $("#skill4"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 80);
 	progBar5 = circularProgressBar.init(100, 5, $("#skill5"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 90);
-	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 100);
+	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 100);*/
 
+	knobOpt = {
+		min:0,
+		max:100,
+		readOnly:true,
+		bgColor:"rgba(0,0,0,0)",
+		width:200,
+		displayInput:false,
+		fgColor:"rgba(255,103,0,1)"
+
+
+	}
+
+	$(".skillCircle").knob(knobOpt);
 });
 
 

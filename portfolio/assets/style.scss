@@ -155,6 +155,10 @@ header{
 	animation:bgMove 30s infinite;
 	-webkit-animation : bgMove 30s linear infinite;
 	text-align: center;
+
+	&>h2 {
+		font-size: 2.2em;
+	}
 	p { 
 		color:black;
 		font-size: 2rem;
@@ -173,13 +177,17 @@ header{
 	.margin-top
 	{
 		margin-top: 10%;
+		font-family: RalewayBold;
+		font-size:3rem;
 	}
 
 	.no-margin-bot {
 		margin-bottom: 0;
 	} 
 
-
+	#exp {
+		display:inline-block;
+	}
 
 	#rotation {
 		display:inline-block;
@@ -195,8 +203,6 @@ header{
 		}
 
 	}
-
-	
 
 	strong {
 		font-family: RalewayBold;
@@ -217,18 +223,20 @@ header{
 	}
 
 	#skillbars {
+		margin-top: 3%;
 		figure {
 			display:inline-block;
 			width : 25%;
 		}
-		/*figcaption {
-			width:30%;
-		}*/
+		figcaption {
+			width:auto;
+		}
 	}
 
-	canvas {
+	&>canvas {
 		width:80%;
 		max-width: 600px;
+		margin-bottom: 3%;
 	}
 
 
@@ -280,7 +288,6 @@ overflow:hidden;
 }
 
 #contact {
-	//height:1000px;
 	background:url(img/a_half.jpg);
 	background-size: cover;
 	overflow:hidden;
@@ -328,8 +335,8 @@ overflow:hidden;
 	&> h1 {
 		width:auto;
 		text-align:center;
-		color:white;
-		background-color: rgba(0,0,0,0.6);
+		color:#FFFFFF;
+		background-color: rgba(0,0,0, 0.6);
 
 		//border : solid 2px $bleu;
 		margin-top: 0;
@@ -351,11 +358,29 @@ overflow:hidden;
 			margin-top: 2%;
 		}
 	}
+
+	
 }
 
 @media screen and (max-width: 500px) {
 	header h1 {
 		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	figure {
+		display:block !important;
+		margin:4% auto;
+	}
+
+	.margin-top {
+		margin-top: 20% !important;
+
+	}
+
+	.code {
+		font-size: 1.75rem !important;
 	}
 }
 

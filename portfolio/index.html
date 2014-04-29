@@ -73,43 +73,43 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 		<p class="no-margin-bot">Apparemment, je suis plutôt bon en </p>
 		<div id="rotation">
 			<span class="word" id="word1">PHP</span>
-			<span class="word" id="word2">Ruby</span>
-			<span class="word" id="word3">JavaScript</span>
-			<span class="word" id="word4">un peu tout, en fait</span>
+			<span class="word" id="word2" style="display:none;">Ruby</span>
+			<span class="word" id="word3" style="display:none;">JavaScript</span>
+			<span class="word" id="word4" style="display:none;">un peu tout, en fait.</span>
 		</div>
 		
 		
 
 		<p class="margin-top">Embauchez-moi !</p>
-		<p class="code">Entreprise.gloireEtFortune = Math.exp(x);</p>
+		<p class="code">Entreprise.gloireEtFortune = <span id="exp">Math.exp(x);</span></p>
 
 		
-		<canvas id="plot" width="500" height="500" data-scroll-reveal></canvas>
-
-
+		<canvas id="plot" width="500" height="500" ></canvas>
+		
+		<h2>Qu'est ce que je sais faire ?</h2>
 		<div id="skillbars">
 			<figure>
-				<div id="skill1"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>PHP</figcaption>
 			</figure>
 			<figure>
-				<div id="skill2"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>Ruby/Ruby on Rails</figcaption>
 			</figure>
 			<figure>	
-				<div id="skill3"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>JavaScript</figcaption>
 			</figure>
 			<figure>
-				<div id="skill4"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>Intégration Web</figcaption>
 			</figure>
 			<figure>
-				<div id="skill5"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>Gestion de projet</figcaption>
 			</figure>
 			<figure>
-				<div id="skill6"></div>
+				<input type="text" class="skillCircle" value="70">
 				<figcaption>Skill</figcaption>
 			</figure>
 		</div>
@@ -144,7 +144,7 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 
 			<label for="message" data-scroll-reveal='after 1s'>Votre message :</label><textarea name="message" id="message" data-scroll-reveal='after 1s'></textarea>
 
-			<button type="submit" data-scroll-reveal='after 2s'>Envoyer</button>
+			<button type="submit" data-scroll-reveal='after 1.6s'>Envoyer</button>
 		</form>
 	</section>
 
@@ -155,6 +155,7 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 	<script src="assets/js/in-viewport.js"></script>
 
 	<script type="text/javascript" src="assets/js/jquery.circular-progress-bar.js"></script>
+	<script src="assets/js/jquery.knob.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 
