@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
     var plot = document.getElementById('plot');
     var skillRot = document.getElementById('rotation');
-	inViewport(plot,{offset:00},execPlot);
+	inViewport(plot,{offset:-300},execPlot);
 	inViewport(skillRot, skillCssAnimStart);
 
 	var ctx = plot.getContext("2d");
