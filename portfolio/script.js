@@ -19,7 +19,9 @@ $(document).ready(function() {
 
     $(".word").css("display","inline-block");
 
-    $("#word1, #word2, #word3").on("animationend",function(){
+
+
+    $("#word1, #word2, #word3").on("animationend webkitAnimationEnd oAnimationEnd",function(){
     	$("#word1, #word2, #word3").hide();
     });
     var plot = document.getElementById('plot');
@@ -94,19 +96,41 @@ $(document).ready(function() {
 	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 100);*/
 
 	knobOpt = {
-		min:0,
-		max:100,
 		readOnly:true,
 		bgColor:"rgba(0,0,0,0)",
 		width:250,
 		height:250,
+		dynamicDraw: true,
+		tickColorizeValues: true,
 		displayInput:false,
 		fgColor:"rgba(255,103,0,1)"
 
 
 	}
 
+	
+
+	$('#skill1').data('targetValue', 90);
+	$('#skill2').data('targetValue', 40);
+	$('#skill3').data('targetValue', 90);
+	$('#skill4').data('targetValue', 80);
+	$('#skill5').data('targetValue', 60);
+	$('#skill6').data('targetValue', 100);
+    
 	$(".skillCircle").knob(knobOpt);
+    
+    $.when(
+	    $('.skillCircle').animate({
+	        value: 100
+	    }, 
+	       {
+	            duration: 1000,
+	            easing: 'swing',
+	            progress: function () {
+	                $(this).val(Math.round(this.value/100*$(this).data('targetValue'))).trigger('change')
+	            }
+	        })
+	);
 });
 
 

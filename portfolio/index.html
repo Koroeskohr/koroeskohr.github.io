@@ -18,7 +18,16 @@
 LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 -
 -
+
+Changements : 
+
+passer cercles avant animation
+mettre le telechargement du CV dans competences
+formule math peu parlante
+bande noire pour fermer le site
 -->
+
+
 	<header class="abs-center">
 
 		<div>
@@ -68,8 +77,42 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
 		</section>
 	</section>
+
+
 	<section id="skills" class="container">
 		<h1>Compétences</h1>
+
+
+		<h2>Qu'est ce que je sais faire ?</h2>
+		<div id="skillbars">
+			<figure>
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill1">
+				<figcaption>PHP</figcaption>
+			</figure>
+			<figure>
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill2">
+				<figcaption>Ruby/Ruby on Rails</figcaption>
+			</figure>
+			<figure>
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill3">
+				<figcaption>Intégration Web</figcaption>
+			</figure>
+			<figure>	
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill4">
+				<figcaption>JavaScript</figcaption>
+			</figure>
+			<figure>
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill5">
+				<figcaption>Gestion de projet</figcaption>
+			</figure>
+			<figure>
+				<input type="text" class="skillCircle" data-targetValue="0" id="skill6">
+				<figcaption>Skill</figcaption>
+			</figure>
+		</div>
+
+
+
 		<p class="no-margin-bot">Apparemment, je suis plutôt bon en </p>
 		<div id="rotation">
 			<span class="word" id="word1">PHP</span>
@@ -86,33 +129,7 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 		
 		<canvas id="plot" width="500" height="500" ></canvas>
 		
-		<h2>Qu'est ce que je sais faire ?</h2>
-		<div id="skillbars">
-			<figure>
-				<input type="text" class="skillCircle" value="95">
-				<figcaption>PHP</figcaption>
-			</figure>
-			<figure>
-				<input type="text" class="skillCircle" value="40">
-				<figcaption>Ruby/Ruby on Rails</figcaption>
-			</figure>
-			<figure>
-				<input type="text" class="skillCircle" value="90">
-				<figcaption>Intégration Web</figcaption>
-			</figure>
-			<figure>	
-				<input type="text" class="skillCircle" value="80">
-				<figcaption>JavaScript</figcaption>
-			</figure>
-			<figure>
-				<input type="text" class="skillCircle" value="60">
-				<figcaption>Gestion de projet</figcaption>
-			</figure>
-			<figure>
-				<input type="text" class="skillCircle" value="100">
-				<figcaption>Skill</figcaption>
-			</figure>
-		</div>
+		
 
 	</section>
 
@@ -139,7 +156,7 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 	<section id="contact" class="container">
 		<h1>Me contacter</h1>
 		<form method="post" action="contact.php">
-			<label for="name" data-scroll-reveal>Nom : </label><input type="text" id="name" name="name" data-scroll-reveal>
+			<label for="name" data-scroll-reveal>Votre nom : </label><input type="text" id="name" name="name" data-scroll-reveal>
 			<label for="subject" data-scroll-reveal='after 0.5s'>Sujet : </label><input type="text" id="subject" name="subject" data-scroll-reveal='after 0.5s'>
 
 			<label for="message" data-scroll-reveal='after 1s'>Votre message :</label><textarea name="message" id="message" data-scroll-reveal='after 1s'></textarea>

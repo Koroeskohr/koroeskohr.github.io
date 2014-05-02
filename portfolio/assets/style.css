@@ -3,48 +3,42 @@
   src: url("raleway-bold-webfont.eot");
   src: url("raleway-bold-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-bold-webfont.woff") format("woff"), url("raleway-bold-webfont.ttf") format("truetype"), url("raleway-bold-webfont.svg#ralewaybold") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'RalewayExtraLight';
   src: url("raleway-extralight-webfont.eot");
   src: url("raleway-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-extralight-webfont.woff") format("woff"), url("raleway-extralight-webfont.ttf") format("truetype"), url("raleway-extralight-webfont.svg#ralewayextralight") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'RalewayRegular';
   src: url("raleway-regular-webfont.eot");
   src: url("raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-regular-webfont.woff") format("woff"), url("raleway-regular-webfont.ttf") format("truetype"), url("raleway-regular-webfont.svg#ralewayregular") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'RalewayMedium';
   src: url("raleway-medium-webfont.eot");
   src: url("raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-medium-webfont.woff") format("woff"), url("raleway-medium-webfont.ttf") format("truetype"), url("raleway-medium-webfont.svg#ralewaymedium") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'RalewayThin';
   src: url("raleway-thin-webfont.eot");
   src: url("raleway-thin-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-thin-webfont.woff") format("woff"), url("raleway-thin-webfont.ttf") format("truetype"), url("raleway-thin-webfont.svg#ralewaythin") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'RalewayExtraBold';
   src: url("raleway-extrabold-webfont.eot");
   src: url("raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-extrabold-webfont.woff") format("woff"), url("raleway-extrabold-webfont.ttf") format("truetype"), url("raleway-extrabold-webfont.svg#ralewayextrabold") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 /*@mixin sprite ($path, $x : 0px, $y : 0px, $width:128px, $height:128px) {
 	background-image: url($path);
@@ -56,30 +50,19 @@
 	position: absolute;
 }*/
 @keyframes bgMove {
-  /* line 86, data.scss */
   from {
-    background-position: 0px 0px;
-  }
+    background-position: 0px 0px; }
 
-  /* line 89, data.scss */
   to {
-    background-position: 824px 824px;
-  }
-}
+    background-position: 824px 824px; } }
 
 @-webkit-keyframes bgMove {
-  /* line 95, data.scss */
   from {
-    background-position: 0px 0px;
-  }
+    background-position: 0px 0px; }
 
-  /* line 98, data.scss */
   to {
-    background-position: 824px 824px;
-  }
-}
+    background-position: 824px 824px; } }
 
-/* line 105, data.scss */
 .word {
   /*animation:rotX 3s linear infinite;*/
   display: inline-block;
@@ -90,396 +73,250 @@
   left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
-/* line 124, data.scss */
 .start #word1 {
   -webkit-animation: wrotX1 8s linear;
-  animation: rotX1 8s linear;
-}
+  animation: rotX1 8s linear; }
 
-/* line 129, data.scss */
 .start #word2 {
   -webkit-animation: wrotX2 8s linear;
-  animation: rotX2 8s linear;
-}
+  animation: rotX2 8s linear; }
 
-/* line 135, data.scss */
 .start #word3 {
   -webkit-animation: wrotX3 8s linear;
-  animation: rotX3 8s linear;
-}
+  animation: rotX3 8s linear; }
 
-/* line 141, data.scss */
 .start #word4 {
   -webkit-animation: wrotX4 8s linear;
-  animation: rotX4 8s linear;
-}
+  animation: rotX4 8s linear; }
 
 @-webkit-keyframes wrotX1 {
-  /* line 147, data.scss */
   0% {
-    -webkit-transform: rotateX(0deg);
-  }
+    -webkit-transform: rotateX(0deg); }
 
-  /* line 150, data.scss */
   10% {
-    -webkit-transform: rotateX(0deg);
-  }
+    -webkit-transform: rotateX(0deg); }
 
-  /* line 154, data.scss */
   20% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 158, data.scss */
   50% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 162, data.scss */
   75% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 167, data.scss */
   100% {
-    -webkit-transform: rotateX(92deg);
-  }
-}
+    -webkit-transform: rotateX(92deg); } }
 
 @keyframes rotX1 {
-  /* line 173, data.scss */
   0% {
-    transform: rotateX(0deg);
-  }
+    transform: rotateX(0deg); }
 
-  /* line 176, data.scss */
   10% {
-    transform: rotateX(0deg);
-  }
+    transform: rotateX(0deg); }
 
-  /* line 180, data.scss */
   20% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 184, data.scss */
   50% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 188, data.scss */
   75% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 193, data.scss */
   100% {
-    transform: rotateX(92deg);
-  }
-}
+    transform: rotateX(92deg); } }
 
 @-webkit-keyframes wrotX2 {
-  /* line 199, data.scss */
   0% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 203, data.scss */
   10% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 208, data.scss */
   30% {
-    -webkit-transform: rotateX(0deg);
-  }
+    -webkit-transform: rotateX(0deg); }
 
-  /* line 212, data.scss */
   40% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 216, data.scss */
   75% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 220, data.scss */
   100% {
-    -webkit-transform: rotateX(92deg);
-  }
-}
+    -webkit-transform: rotateX(92deg); } }
 
 @keyframes rotX2 {
-  /* line 226, data.scss */
   0% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 230, data.scss */
   10% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 235, data.scss */
   30% {
-    transform: rotateX(0deg);
-  }
+    transform: rotateX(0deg); }
 
-  /* line 239, data.scss */
   40% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 243, data.scss */
   75% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 247, data.scss */
   100% {
-    transform: rotateX(92deg);
-  }
-}
+    transform: rotateX(92deg); } }
 
 @-webkit-keyframes wrotX3 {
-  /* line 253, data.scss */
   0% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 257, data.scss */
   25% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 261, data.scss */
   35% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 266, data.scss */
   45% {
-    -webkit-transform: rotateX(0deg);
-  }
+    -webkit-transform: rotateX(0deg); }
 
-  /* line 270, data.scss */
   60% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 274, data.scss */
   100% {
-    -webkit-transform: rotateX(92deg);
-  }
-}
+    -webkit-transform: rotateX(92deg); } }
 
 @keyframes rotX3 {
-  /* line 280, data.scss */
   0% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 284, data.scss */
   25% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 288, data.scss */
   35% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 293, data.scss */
   45% {
-    transform: rotateX(0deg);
-  }
+    transform: rotateX(0deg); }
 
-  /* line 297, data.scss */
   60% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 301, data.scss */
   100% {
-    transform: rotateX(92deg);
-  }
-}
+    transform: rotateX(92deg); } }
 
 @-webkit-keyframes wrotX4 {
-  /* line 307, data.scss */
   0% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 311, data.scss */
   25% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 315, data.scss */
   50% {
-    -webkit-transform: rotateX(92deg);
-  }
+    -webkit-transform: rotateX(92deg); }
 
-  /* line 319, data.scss */
   80% {
-    -webkit-transform: rotateX(0deg);
-  }
+    -webkit-transform: rotateX(0deg); }
 
-  /* line 324, data.scss */
   100% {
-    -webkit-transform: rotateX(0deg);
-  }
-}
+    -webkit-transform: rotateX(0deg); } }
 
 @keyframes rotX4 {
-  /* line 330, data.scss */
   0% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 334, data.scss */
   25% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 338, data.scss */
   50% {
-    transform: rotateX(92deg);
-  }
+    transform: rotateX(92deg); }
 
-  /* line 342, data.scss */
   80% {
-    transform: rotateX(0deg);
-  }
+    transform: rotateX(0deg); }
 
-  /* line 347, data.scss */
   100% {
-    transform: rotateX(0deg);
-  }
-}
+    transform: rotateX(0deg); } }
 
 @-webkit-keyframes pulse {
-  /* line 355, data.scss */
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+    transform: scale(1); }
 
-  /* line 360, data.scss */
   50% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+    transform: scale(1.1); }
 
-  /* line 365, data.scss */
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
 @keyframes pulse {
-  /* line 372, data.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
-  }
+    transform: scale(1); }
 
-  /* line 378, data.scss */
   50% {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+    transform: scale(1.1); }
 
-  /* line 384, data.scss */
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
-/* line 391, data.scss */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  animation-duration: 1s;
-}
+  animation-duration: 1s; }
 
-/* line 3, style.scss */
 .abs-center {
   margin: auto;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
-}
+  right: 0; }
 
 @-webkit-keyframes fadeOutDown {
-  /* line 9, style.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+    transform: translateY(0); }
 
-  /* line 15, style.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-}
+    transform: translateY(20px); } }
 
 @keyframes fadeOutDown {
-  /* line 23, style.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
+    transform: translateY(0); }
 
-  /* line 30, style.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-}
+    transform: translateY(20px); } }
 
-/* line 38, style.scss */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown;
-}
+  animation-name: fadeOutDown; }
 
-/* line 43, style.scss */
 body {
   margin: 0;
   height: 100%;
-  min-width: 355px;
-}
+  min-width: 355px; }
 
-/* line 49, style.scss */
 h1, h2, h3 {
-  font-family: RalewayExtraBold;
-}
+  font-family: RalewayExtraBold; }
 
-/* line 53, style.scss */
 p {
-  font-family: RalewayRegular;
-}
+  font-family: RalewayRegular; }
 
-/* line 58, style.scss */
 header {
   height: 100%;
   min-height: 768px;
@@ -487,273 +324,185 @@ header {
   background-image: url(img/fond2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
-}
-/* line 68, style.scss */
-header div {
-  width: 90%;
-  margin: 0 auto;
-}
-/* line 72, style.scss */
-header div > img {
-  -webkit-filter: drop-shadow(5px 5px 5px #111111);
-  filter: drop-shadow(5px 5px 5px #111111);
-  margin-top: 7%;
-  height: 50%;
-  min-height: 200px;
-  transition: 0.5s;
-}
-/* line 80, style.scss */
-header div > img:hover {
-  -ms-transform: rotate(1.1);
-  /* IE 9 */
-  -webkit-transform: rotate(1.1);
-  /* Chrome, Safari, Opera */
-  transform: rotate(1.1);
-}
-/* line 86, style.scss */
-header a {
-  text-decoration: none;
-}
-/* line 90, style.scss */
-header ul {
-  margin-top: 8%;
-}
-/* line 93, style.scss */
-header li {
-  display: inline;
-  list-style-type: none;
-  margin-right: 3%;
-}
-/* line 99, style.scss */
-header h1, header h2 {
-  color: white;
-  font-variant: small-caps;
-}
-/* line 105, style.scss */
-header p {
-  color: white;
-}
-/* line 109, style.scss */
-header h1 {
-  font-size: 5rem;
-  margin-bottom: 0;
-  margin-top: 3%;
-}
-/* line 115, style.scss */
-header h2 {
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  overflow: hidden; }
+  header div {
+    width: 90%;
+    margin: 0 auto; }
+    header div > img {
+      -webkit-filter: drop-shadow(5px 5px 5px #111111);
+      filter: drop-shadow(5px 5px 5px #111111);
+      margin-top: 7%;
+      height: 50%;
+      min-height: 200px;
+      transition: 0.5s; }
+      header div > img:hover {
+        -ms-transform: rotate(1.1);
+        /* IE 9 */
+        -webkit-transform: rotate(1.1);
+        /* Chrome, Safari, Opera */
+        transform: rotate(1.1); }
+  header a {
+    text-decoration: none; }
+  header ul {
+    margin-top: 8%; }
+  header li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 3%; }
+  header h1, header h2 {
+    color: white;
+    font-variant: small-caps; }
+  header p {
+    color: white; }
+  header h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 3%; }
+  header h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0; }
 
-/* line 123, style.scss */
 #social img {
   width: 60px;
   -webkit-filter: drop-shadow(2px 2px 2px #111111);
-  filter: drop-shadow(2px 2px 2px #111111);
-}
+  filter: drop-shadow(2px 2px 2px #111111); }
 
-/* line 131, style.scss */
 #projects {
   background: url(img/i.o2.jpg);
   background-size: cover;
-  overflow: hidden;
-}
-/* line 133, style.scss */
-#projects h1, #projects h2, #projects p {
-  text-shadow: #000000 0px 0px 2px;
-  color: white;
-}
-/* line 142, style.scss */
-#projects section {
-  clear: both;
-  padding: 0 15%;
-}
-/* line 146, style.scss */
-#projects section img {
-  float: left;
-  margin: 0 2% 2% 0;
-}
+  overflow: hidden; }
+  #projects h1, #projects h2, #projects p {
+    text-shadow: #000000 0px 0px 2px;
+    color: white; }
+  #projects section {
+    clear: both;
+    padding: 0 15%; }
+    #projects section img {
+      float: left;
+      margin: 0 2% 2% 0; }
 
-/* line 153, style.scss */
 #skills {
   background: url(img/geometry.png) repeat;
   animation: bgMove 30s infinite;
   -webkit-animation: bgMove 30s linear infinite;
-  text-align: center;
-}
-/* line 159, style.scss */
-#skills > h2 {
-  font-size: 2.8em;
-  text-transform: uppercase;
-  font-family: RalewayBold;
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-/* line 167, style.scss */
-#skills p {
-  color: black;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 3%;
-}
-/* line 172, style.scss */
-#skills p.code {
-  font-family: "Source Code Pro","Courier New";
-  font-size: 2.5rem;
-}
-/* line 183, style.scss */
-#skills .margin-top {
-  margin-top: 10%;
-  font-family: RalewayBold;
-  font-size: 3rem;
-}
-/* line 189, style.scss */
-#skills .no-margin-bot {
-  margin-bottom: 0;
-}
-/* line 193, style.scss */
-#skills #exp {
-  display: inline-block;
-}
-/* line 197, style.scss */
-#skills #rotation {
-  display: inline-block;
-  position: relative;
-  margin-top: 0;
-  font-family: RalewayBold;
-  font-size: 3rem;
-}
-/* line 205, style.scss */
-#skills #rotation span {
-  text-align: center;
-  margin: auto;
-}
-/* line 212, style.scss */
-#skills strong {
-  font-family: RalewayBold;
-}
-/* line 216, style.scss */
-#skills > div {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10%;
-}
-/* line 223, style.scss */
-#skills svg {
-  display: inline-block;
-  height: 200px;
-  margin-right: 150px;
-}
-/* line 230, style.scss */
-#skills #skillbars {
-  margin-top: 3%;
-}
-/* line 232, style.scss */
-#skills #skillbars figure {
-  display: inline-block;
-  width: auto;
-}
-/* line 236, style.scss */
-#skills #skillbars figcaption {
-  width: auto;
-  margin: auto;
-  margin-top: 10px;
-  font-family: RalewayMedium;
-  font-size: 1.6rem;
-}
-/* line 245, style.scss */
-#skills > canvas {
-  width: 80%;
-  max-width: 600px;
-  margin-bottom: 3%;
-}
+  text-align: center; }
+  #skills > h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: RalewayBold;
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  #skills p {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3%; }
+    #skills p.code {
+      font-family: "Source Code Pro","Courier New";
+      font-size: 2.5rem; }
+  #skills .margin-top {
+    margin-top: 10%;
+    font-family: RalewayBold;
+    font-size: 3rem; }
+  #skills .no-margin-bot {
+    margin-bottom: 0; }
+  #skills #exp {
+    display: inline-block; }
+  #skills #rotation {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    font-family: RalewayBold;
+    font-size: 3rem; }
+    #skills #rotation span {
+      text-align: center;
+      margin: auto; }
+  #skills strong {
+    font-family: RalewayBold; }
+  #skills > div {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%; }
+  #skills svg {
+    display: inline-block;
+    height: 200px;
+    margin-right: 150px; }
+  #skills #skillbars {
+    max-width: 1000px;
+    margin-top: 3%;
+    padding-bottom: 3%; }
+    #skills #skillbars figure {
+      display: inline-block;
+      width: auto; }
+    #skills #skillbars figcaption {
+      width: auto;
+      margin: auto;
+      margin-top: 10px;
+      font-family: RalewayMedium;
+      font-size: 1.6rem; }
+  #skills > canvas {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 3%; }
 
-/* line 256, style.scss */
 #about {
   background: url(img/brickwall.png);
-  overflow: hidden;
-}
-/* line 261, style.scss */
-#about img {
-  float: left;
-}
-/* line 267, style.scss */
-#about h2 {
-  font-size: 3rem;
-  margin-bottom: 1%;
-}
-/* line 272, style.scss */
-#about h3 {
-  margin-top: 0;
-  font-size: 2rem;
-}
+  overflow: hidden; }
+  #about img {
+    float: left; }
+  #about h2 {
+    font-size: 3rem;
+    margin-bottom: 1%; }
+  #about h3 {
+    margin-top: 0;
+    font-size: 2rem; }
 
-/* line 280, style.scss */
 #hobbies {
-  background: url(img/dvd.jpg);
-}
-/* line 284, style.scss */
-#hobbies p {
-  width: 70%;
-  margin: 1% auto;
-  color: white;
-  text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
-}
-/* line 293, style.scss */
-#hobbies img {
-  margin: 3% 0 5% 15%;
-  opacity: 0.2;
-}
+  background: url(img/dvd.jpg); }
+  #hobbies p {
+    width: 70%;
+    margin: 1% auto;
+    color: white;
+    text-shadow: 0px 0px 6px #000, 0px 0px 4px #000, 0px 0px 12px #000; }
+  #hobbies img {
+    margin: 3% 0 5% 15%;
+    opacity: 0.2; }
 
-/* line 299, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
-  overflow: hidden;
-}
-/* line 303, style.scss */
-#contact form {
-  width: 70%;
-  margin: 0 auto;
-}
-/* line 309, style.scss */
-#contact label {
-  display: block;
-  font-family: RalewayBold;
-  color: white;
-  margin-bottom: 0.5%;
-}
-/* line 315, style.scss */
-#contact input {
-  display: block;
-  margin-bottom: 1%;
-  width: 30%;
-}
-/* line 320, style.scss */
-#contact textarea {
-  display: block;
-  width: 30%;
-  height: 200px;
-  margin-bottom: 5%;
-}
-/* line 327, style.scss */
-#contact button {
-  border: 0;
-  font-family: RalewayExtraBold;
-  background-color: #b53b01;
-  color: white;
-  font-size: 1.5rem;
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  margin-bottom: 10%;
-}
+  overflow: hidden; }
+  #contact form {
+    width: 70%;
+    margin: 0 auto; }
+  #contact label {
+    display: block;
+    font-family: RalewayBold;
+    color: white;
+    margin-bottom: 0.5%; }
+  #contact input {
+    display: block;
+    margin-bottom: 1%;
+    width: 30%; }
+  #contact textarea {
+    display: block;
+    width: 30%;
+    height: 200px;
+    margin-bottom: 5%; }
+  #contact button {
+    border: 0;
+    font-family: RalewayExtraBold;
+    background-color: #b53b01;
+    color: white;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-bottom: 10%; }
 
-/* line 344, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
@@ -763,75 +512,46 @@ header h2 {
   margin-bottom: 3%;
   text-transform: uppercase;
   padding: 1% 0;
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
 @media screen and (max-width: 400px) {
-  /* line 361, style.scss */
   h1 {
-    line-height: 5rem;
-  }
+    line-height: 5rem; }
 
-  /* line 366, style.scss */
   header div > img {
-    margin-top: 2%;
-  }
-}
+    margin-top: 2%; } }
 @media screen and (max-width: 500px) {
-  /* line 375, style.scss */
   header h1 {
-    font-size: 4rem;
-  }
-}
+    font-size: 4rem; } }
 @media screen and (max-width: 680px) {
-  /* line 381, style.scss */
   figure {
     display: block !important;
-    margin: 4% auto;
-  }
+    margin: 4% auto; }
 
-  /* line 386, style.scss */
   .margin-top {
-    margin-top: 20% !important;
-  }
+    margin-top: 20% !important; }
 
-  /* line 391, style.scss */
   .code {
-    font-size: 1.75rem !important;
-  }
-}
+    font-size: 1.75rem !important; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 400, style.scss */
   header {
-    min-height: 1500px;
-  }
+    min-height: 1500px; }
 
-  /* line 403, style.scss */
   #social {
-    margin-top: 20%;
-  }
-  /* line 405, style.scss */
-  #social img {
-    width: 120px;
-    -webkit-filter: drop-shadow(4px 4px 4px #111111);
-    filter: drop-shadow(4px 4px 4px #111111);
-  }
+    margin-top: 20%; }
+    #social img {
+      width: 120px;
+      -webkit-filter: drop-shadow(4px 4px 4px #111111);
+      filter: drop-shadow(4px 4px 4px #111111); }
 
-  /* line 412, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
-    filter: drop-shadow(2px 2px 4px #111111);
-  }
-  /* line 418, style.scss */
+    filter: drop-shadow(2px 2px 4px #111111); }
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
-    filter: drop-shadow(2px 2px 4px #111111);
-  }
+    filter: drop-shadow(2px 2px 4px #111111); }
 
-  /* line 426, style.scss */
   header div > img {
-    margin-top: 10%;
-  }
-}
+    margin-top: 10%; } }
