@@ -505,11 +505,11 @@ header div > img {
 }
 /* line 80, style.scss */
 header div > img:hover {
-  -ms-transform: rotate(1);
+  -ms-transform: rotate(1.1);
   /* IE 9 */
-  -webkit-transform: rotate(1);
+  -webkit-transform: rotate(1.1);
   /* Chrome, Safari, Opera */
-  transform: rotate(1);
+  transform: rotate(1.1);
 }
 /* line 86, style.scss */
 header a {
@@ -585,35 +585,39 @@ header h2 {
 }
 /* line 159, style.scss */
 #skills > h2 {
-  font-size: 2.2em;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-family: RalewayBold;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
-/* line 162, style.scss */
+/* line 167, style.scss */
 #skills p {
   color: black;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3%;
 }
-/* line 167, style.scss */
+/* line 172, style.scss */
 #skills p.code {
   font-family: "Source Code Pro","Courier New";
   font-size: 2.5rem;
 }
-/* line 178, style.scss */
+/* line 183, style.scss */
 #skills .margin-top {
   margin-top: 10%;
   font-family: RalewayBold;
   font-size: 3rem;
 }
-/* line 184, style.scss */
+/* line 189, style.scss */
 #skills .no-margin-bot {
   margin-bottom: 0;
 }
-/* line 188, style.scss */
+/* line 193, style.scss */
 #skills #exp {
   display: inline-block;
 }
-/* line 192, style.scss */
+/* line 197, style.scss */
 #skills #rotation {
   display: inline-block;
   position: relative;
@@ -621,117 +625,121 @@ header h2 {
   font-family: RalewayBold;
   font-size: 3rem;
 }
-/* line 200, style.scss */
+/* line 205, style.scss */
 #skills #rotation span {
   text-align: center;
   margin: auto;
 }
-/* line 207, style.scss */
+/* line 212, style.scss */
 #skills strong {
   font-family: RalewayBold;
 }
-/* line 211, style.scss */
+/* line 216, style.scss */
 #skills > div {
   width: 90%;
   display: block;
   margin: 0 auto;
   margin-top: 10%;
 }
-/* line 218, style.scss */
+/* line 223, style.scss */
 #skills svg {
   display: inline-block;
   height: 200px;
   margin-right: 150px;
 }
-/* line 225, style.scss */
+/* line 230, style.scss */
 #skills #skillbars {
   margin-top: 3%;
 }
-/* line 227, style.scss */
+/* line 232, style.scss */
 #skills #skillbars figure {
   display: inline-block;
-  width: 25%;
-}
-/* line 231, style.scss */
-#skills #skillbars figcaption {
   width: auto;
 }
 /* line 236, style.scss */
+#skills #skillbars figcaption {
+  width: auto;
+  margin: auto;
+  margin-top: 10px;
+  font-family: RalewayMedium;
+  font-size: 1.8rem;
+}
+/* line 245, style.scss */
 #skills > canvas {
   width: 80%;
   max-width: 600px;
   margin-bottom: 3%;
 }
 
-/* line 247, style.scss */
+/* line 256, style.scss */
 #about {
   background: url(img/brickwall.png);
   overflow: hidden;
 }
-/* line 252, style.scss */
+/* line 261, style.scss */
 #about img {
   float: left;
 }
-/* line 258, style.scss */
+/* line 267, style.scss */
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1%;
 }
-/* line 263, style.scss */
+/* line 272, style.scss */
 #about h3 {
   margin-top: 0;
   font-size: 2rem;
 }
 
-/* line 271, style.scss */
+/* line 280, style.scss */
 #hobbies {
   background: url(img/dvd.jpg);
 }
-/* line 275, style.scss */
+/* line 284, style.scss */
 #hobbies p {
   width: 70%;
   margin: 1% auto;
   color: white;
   text-shadow: 0px 0px 6px black, 0px 0px 4px black, 0px 0px 12px black;
 }
-/* line 284, style.scss */
+/* line 293, style.scss */
 #hobbies img {
   margin: 3% 0 5% 15%;
   opacity: 0.2;
 }
 
-/* line 290, style.scss */
+/* line 299, style.scss */
 #contact {
   background: url(img/a_half.jpg);
   background-size: cover;
   overflow: hidden;
 }
-/* line 294, style.scss */
+/* line 303, style.scss */
 #contact form {
   width: 70%;
   margin: 0 auto;
 }
-/* line 300, style.scss */
+/* line 309, style.scss */
 #contact label {
   display: block;
   font-family: RalewayBold;
   color: white;
   margin-bottom: 0.5%;
 }
-/* line 306, style.scss */
+/* line 315, style.scss */
 #contact input {
   display: block;
   margin-bottom: 1%;
   width: 30%;
 }
-/* line 311, style.scss */
+/* line 320, style.scss */
 #contact textarea {
   display: block;
   width: 30%;
   height: 200px;
   margin-bottom: 5%;
 }
-/* line 318, style.scss */
+/* line 327, style.scss */
 #contact button {
   border: 0;
   font-family: RalewayExtraBold;
@@ -745,12 +753,12 @@ header h2 {
   margin-bottom: 10%;
 }
 
-/* line 335, style.scss */
+/* line 344, style.scss */
 .container > h1 {
   width: auto;
   text-align: center;
   color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: 0;
   margin-bottom: 3%;
   text-transform: uppercase;
@@ -759,70 +767,70 @@ header h2 {
 }
 
 @media screen and (max-width: 400px) {
-  /* line 352, style.scss */
+  /* line 361, style.scss */
   h1 {
     line-height: 5rem;
   }
 
-  /* line 357, style.scss */
+  /* line 366, style.scss */
   header div > img {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 366, style.scss */
+  /* line 375, style.scss */
   header h1 {
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 372, style.scss */
+  /* line 381, style.scss */
   figure {
     display: block !important;
     margin: 4% auto;
   }
 
-  /* line 377, style.scss */
+  /* line 386, style.scss */
   .margin-top {
     margin-top: 20% !important;
   }
 
-  /* line 382, style.scss */
+  /* line 391, style.scss */
   .code {
     font-size: 1.75rem !important;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 391, style.scss */
+  /* line 400, style.scss */
   header {
-    min-height: 1700px;
+    min-height: 1500px;
   }
 
-  /* line 394, style.scss */
+  /* line 403, style.scss */
   #social {
     margin-top: 20%;
   }
-  /* line 396, style.scss */
+  /* line 405, style.scss */
   #social img {
     width: 120px;
     -webkit-filter: drop-shadow(4px 4px 4px #111111);
     filter: drop-shadow(4px 4px 4px #111111);
   }
 
-  /* line 403, style.scss */
+  /* line 412, style.scss */
   header h1 {
     font-size: 8rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
-  /* line 409, style.scss */
+  /* line 418, style.scss */
   header h2 {
     font-size: 6rem;
     -webkit-filter: drop-shadow(2px 2px 4px #111111);
     filter: drop-shadow(2px 2px 4px #111111);
   }
 
-  /* line 417, style.scss */
+  /* line 426, style.scss */
   header div > img {
     margin-top: 10%;
   }

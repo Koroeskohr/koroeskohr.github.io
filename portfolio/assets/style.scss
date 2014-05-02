@@ -157,7 +157,12 @@ header{
 	text-align: center;
 
 	&>h2 {
-		font-size: 2.2em;
+		font-size: 2.8em;
+		text-transform: uppercase;
+		font-family: RalewayBold;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		
 	}
 	p { 
 		color:black;
@@ -226,10 +231,14 @@ header{
 		margin-top: 3%;
 		figure {
 			display:inline-block;
-			width : 25%;
+			width : auto;
 		}
 		figcaption {
 			width:auto;
+			margin:auto;
+			margin-top: 10px;
+			font-family: RalewayMedium;
+			font-size: 1.8rem;
 		}
 	}
 
@@ -336,7 +345,7 @@ overflow:hidden;
 		width:auto;
 		text-align:center;
 		color:#FFFFFF;
-		background-color: rgba(0,0,0, 0.6);
+		background-color: rgba(0 ,0 , 0, 0.6);
 
 		//border : solid 2px $bleu;
 		margin-top: 0;
@@ -389,7 +398,7 @@ overflow:hidden;
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
 	header {
-		min-height:1700px;
+		min-height:1500px;
 	}
 	#social {
 		margin-top: 20%;

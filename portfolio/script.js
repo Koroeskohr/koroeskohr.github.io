@@ -98,7 +98,8 @@ $(document).ready(function() {
 		max:100,
 		readOnly:true,
 		bgColor:"rgba(0,0,0,0)",
-		width:200,
+		width:250,
+		height:250,
 		displayInput:false,
 		fgColor:"rgba(255,103,0,1)"
 
