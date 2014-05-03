@@ -17,7 +17,7 @@ $(document).ready(function() {
     })
         .trigger('resize');
 
-    $(".word").css("display","inline-block");
+    
 
 
 
@@ -25,9 +25,9 @@ $(document).ready(function() {
     	$("#word1, #word2, #word3").hide();
     });
     var plot = document.getElementById('plot');
-    var skillRot = document.getElementById('rotation');
+    var skillRot = document.getElementById('cssAnimViewport');
 	inViewport(plot,{offset:-300},execPlot);
-	inViewport(skillRot, skillCssAnimStart);
+	inViewport(skillRot,skillCssAnimStart);
 
 	var ctx = plot.getContext("2d");
 	function execPlot() {
@@ -82,10 +82,13 @@ $(document).ready(function() {
 	}
 
 	function skillCssAnimStart() {
-		if (!$("#rotation").hasClass('start'))
-		{
-			$("#rotation").addClass('start');
-		}
+		setTimeout( function() {
+			if (!$("#rotation").hasClass('start')) {
+				$("#rotation").addClass('start');
+			}
+		}, 1000);
+		$(".word").css("display","inline-block");
+		
 	}
 
 	/*progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);
