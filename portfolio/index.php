@@ -1,12 +1,45 @@
+
+<?php
+
+///// FUNCTIONS
+
+function getProjects($db) {
+	return $db->query("SELECT * FROM v_projects ORDER BY id DESC");
+}
+
+
+///// DB ACCESS
+
+try {
+    $db = new PDO('mysql:host=timunix.cegep-ste-foy.qc.ca;dbname=spec2014_vviale;charset=utf8', "spec2014_vviale", "JhKP874#");
+    $projects = getProjects($db);
+    $projects->setFetchMode(PDO::FETCH_OBJ);
+
+
+} catch (PDOException $e) {
+    print "Erreur !: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+
+
+
+
+
+?>
+
+
+
 <!doctype html>
 <html lang="fr">
 
 <head>
 	<meta charset="UTF-8">
 	<title>Victor Viale - Développeur Web - Portfolio</title>
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="assets/normalize.css">
 	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
 	<!-- background image from pixelperfectdigital.com -->
 </head>
@@ -21,10 +54,10 @@ LES IMAGES SONT DES PLACEHOLDERS POUR DES FUTURS ELEMENTS JAVASCRIPT
 
 Changements : 
 
---passer cercles avant animation
+-passer cercles avant animation
 mettre le telechargement du CV dans competences
 formule math peu parlante
-bande noire pour fermer le site
+-bande noire pour fermer le site
 -->
 
 
@@ -58,24 +91,21 @@ bande noire pour fermer le site
 	</header>
 	<section id="projects" class="container">
 		<h1>Projets</h1>
-		<section id="project1" data-scroll-reveal>
-			<img src="assets/img/250x250.gif" alt="Projet 1">
-			<h1>Titre projet 1</h1>
-			<h2>Poste occupé</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
+
+		<?php 
+			while ($project = $projects->fetch()) :
+		?>
+		<section data-scroll-reveal>
+			<a class="fancybox" rel="group" href="assets/img/big_<?php echo $project->img; ?>">
+				<img src="<?php echo 'assets/img/'.$project->img; ?>" alt="<?php echo utf8_encode($project->titre); ?>">
+			</a>
+			<h1><?php echo utf8_encode($project->titre); ?></h1>
+			<h2><?php echo utf8_encode($project->poste); ?></h2>
+			<p><?php echo utf8_encode($project->description); ?></p>
 		</section>
-		<section id="project2" data-scroll-reveal>
-			<img src="assets/img/250x250.gif" alt="Projet 2">
-			<h1>Titre projet 2</h1>
-			<h2>Poste occupé</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
-		</section>
-		<section id="project3" data-scroll-reveal>
-			<img src="assets/img/250x250.gif" alt="Projet 3">
-			<h1>Titre projet 3</h1>
-			<h2>Poste occupé</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, officiis fugiat labore vitae sint dolores necessitatibus possimus officia autem veniam totam temporibus modi placeat quia alias id ad iste! Ullam.</p>
-		</section>
+		<?php endwhile;
+		$projects->closeCursor(); ?>
+
 	</section>
 
 
@@ -121,13 +151,14 @@ bande noire pour fermer le site
 			<span class="word" id="word4" style="display:none;">un peu tout, en fait.</span>
 		</div>
 		
+		<div id="cssAnim"></div>
 		
 
-		<p class="margin-top" id="cssAnimViewport">Embauchez-moi !</p>
+		<p class="margin-top">Embauchez-moi !</p>
 		<p class="code">Entreprise.gloireEtFortune = <span id="exp">Math.exp(x);</span></p>
 
 		
-		<canvas id="plot" width="500" height="500" ></canvas>
+		<canvas id="plot" width="500" height="500" data-scroll-inin></canvas>
 		
 		
 
@@ -155,18 +186,20 @@ bande noire pour fermer le site
 	</section>
 	<section id="contact" class="container">
 		<h1>Me contacter</h1>
-		<form method="post" action="contact.php">
+		<div>
 			<label for="name" data-scroll-reveal>Votre nom : </label><input type="text" id="name" name="name" data-scroll-reveal>
-			<label for="subject" data-scroll-reveal='after 0.5s'>Sujet : </label><input type="text" id="subject" name="subject" data-scroll-reveal='after 0.5s'>
+			<label for="mail" data-scroll-reveal='after 0.1s'>Votre adresse email : </label><input type="text" id="mail" name="mail" data-scroll-reveal='after 0.1s'>
+			<label for="subject" data-scroll-reveal='after 0.2s'>Sujet : </label><input type="text" id="subject" name="subject" data-scroll-reveal='after 0.2s'>
+			
+			<label for="message" data-scroll-reveal='after 0.3s'>Votre message :</label><textarea name="message" id="message" data-scroll-reveal='after 0.3s'></textarea>
 
-			<label for="message" data-scroll-reveal='after 1s'>Votre message :</label><textarea name="message" id="message" data-scroll-reveal='after 1s'></textarea>
-
-			<button type="submit" data-scroll-reveal='after 1.6s'>Envoyer</button>
-		</form>
+			<button id="sendMail" data-scroll-reveal='after 0.4s'>Envoyer</button>
+		</div>
+		
 	</section>
 
 	<footer>
-		<p>Victor Viale - Développeur Web - 2014</p>
+		<p>Victor Viale - Développeur Web - <?php echo date("Y"); ?></p>
 	</footer>
 
 
@@ -177,6 +210,8 @@ bande noire pour fermer le site
 
 	<script src="assets/js/jquery.circular-progress-bar.js"></script>
 	<script src="assets/js/jquery.knob.js"></script>
+	
+	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script src="script.js"></script>
 </body>
 

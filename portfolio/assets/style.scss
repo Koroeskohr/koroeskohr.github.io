@@ -260,9 +260,14 @@ overflow:hidden;
 
 	img {
 		float:left;
+		margin-right: 6%;
+		margin-left: 5%;
 	}
 
-
+	p {
+		margin-right: 2%;
+		max-width: 1400px;
+	}
 
 	h2 {
 		font-size: 3rem;
@@ -300,7 +305,7 @@ overflow:hidden;
 	background:url(img/a_half.jpg);
 	background-size: cover;
 	overflow:hidden;
-	form {
+	div {
 		width:70%;
 		margin: 0 auto;
 
@@ -345,7 +350,7 @@ overflow:hidden;
 		width:auto;
 		text-align:center;
 		color:#FFFFFF;
-		background-color: rgba(0 ,0 , 0, 0.6);
+		background-color: rgba(0,0,0,0.6);
 
 		//border : solid 2px $bleu;
 		margin-top: 0;
@@ -408,6 +413,26 @@ body > footer {
 	}
 }
 
+@media screen and (max-width: 1150px){
+	#about {
+		text-align: center;
+		padding-bottom: 5%;
+		img {
+			float:none;
+			min-width: 350px;
+			max-width: 60%;
+		}
+		h2 {
+			margin-top: 3%;
+		}
+
+		p {
+			padding-left: 2%;
+			padding-right: 2%;
+
+		}
+	}
+}
 
 @media 
 (-webkit-min-device-pixel-ratio: 2), 

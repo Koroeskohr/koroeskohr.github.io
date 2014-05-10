@@ -17,6 +17,8 @@ $(document).ready(function() {
     })
         .trigger('resize');
 
+
+    $(".fancybox").fancybox();
     
 
 
@@ -25,40 +27,43 @@ $(document).ready(function() {
     	$("#word1, #word2, #word3").hide();
     });
     var plot = document.getElementById('plot');
-    var skillRot = document.getElementById('cssAnimViewport');
-	inViewport(plot,{offset:-300},execPlot);
-	inViewport(skillRot,skillCssAnimStart);
+    var skillRot = document.getElementById('exp');
+    var knobs = document.getElementById("skillbars");
+	//inViewport(plot,{offset:-300},execPlot);
+	execPlot();
+	skillCssAnimStart();
+	inViewport(knobs,{offset:0}, knobSetup);
 
 	var ctx = plot.getContext("2d");
 	function execPlot() {
 
-	var options = {};
-	if (/*document.cookie === "plot"*/true) {
-		options = {
-			bezierCurve:false,
-			pointDot:false,
-			datasetStrokeWidth : 6,
-			datasetFill:false,
-			scaleShowLabels:false,
-			animationSteps:150,
+		var options = {};
+		if ($(window).width > 1200) {
+			options = {
+				bezierCurve:false,
+				pointDot:false,
+				datasetStrokeWidth : 6,
+				datasetFill:false,
+				scaleShowLabels:false,
+				animationSteps:150,
 
-			scaleShowGridLines : false,
-			onAnimationComplete : function () {
-				$("#exp").addClass('pulse animated');
-				document.cookie = "plot";
-			}
-		};
-	}
-	else {
-		options = {
-			bezierCurve:false,
-			pointDot:false,
-			datasetStrokeWidth : 6,
-			datasetFill:false,
-			scaleShowLabels:false,
-			animation:false,
-			scaleShowGridLines : false
-		};
+				scaleShowGridLines : false,
+				onAnimationComplete : function () {
+					$("#exp").addClass('pulse animated');
+					document.cookie = "plot";
+				}
+			};
+		}
+		else {
+			options = {
+				bezierCurve:false,
+				pointDot:false,
+				datasetStrokeWidth : 6,
+				datasetFill:false,
+				scaleShowLabels:false,
+				animation:false,
+				scaleShowGridLines : false
+			};
 
 	}
 		
@@ -82,21 +87,12 @@ $(document).ready(function() {
 	}
 
 	function skillCssAnimStart() {
-		setTimeout( function() {
-			if (!$("#rotation").hasClass('start')) {
-				$("#rotation").addClass('start');
-			}
-		}, 1000);
+		if (!$("#rotation").hasClass('start')) {
+			$("#rotation").addClass('start');
+		}
 		$(".word").css("display","inline-block");
 		
 	}
-
-	/*progBar1 = circularProgressBar.init(100, 5, $("#skill1"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 50);
-	progBar2 = circularProgressBar.init(100, 5, $("#skill2"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 60);
-	progBar3 = circularProgressBar.init(100, 5, $("#skill3"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 70);
-	progBar4 = circularProgressBar.init(100, 5, $("#skill4"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 80);
-	progBar5 = circularProgressBar.init(100, 5, $("#skill5"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 90);
-	progBar6 = circularProgressBar.init(100, 5, $("#skill6"), 'orange', 'rgba(0,0,0,0)', 'rgba(255,255,255,0)', 100);*/
 
 	knobOpt = {
 		readOnly:true,
@@ -107,8 +103,6 @@ $(document).ready(function() {
 		tickColorizeValues: true,
 		displayInput:false,
 		fgColor:"rgba(255,103,0,1)"
-
-
 	}
 
 	
@@ -122,19 +116,79 @@ $(document).ready(function() {
     
 	$(".skillCircle").knob(knobOpt);
     
-    $.when(
-	    $('.skillCircle').animate({
-	        value: 100
-	    }, 
-	       {
-	            duration: 1000,
-	            easing: 'swing',
-	            progress: function () {
-	                $(this).val(Math.round(this.value/100*$(this).data('targetValue'))).trigger('change')
-	            }
-	        })
-	);
+    function knobSetup()
+    {
+    	$.when(
+		    $('.skillCircle').animate({
+		        value: 100
+		    }, 
+		       {
+		            duration: 1000,
+		            easing: 'swing',
+		            progress: function () {
+		                $(this).val(Math.round(this.value/100*$(this).data('targetValue'))).trigger('change')
+		            }
+		        })
+		);
+    }
+
+
+
+    $("#sendMail").click(function() {
+    	var user_name = $("#name").val();
+    	var user_mail = $('input[name="mail"]').val();
+    	var subject = $("#subject").val();
+    	var message = $("#message").val();
+
+
+    	var mailIsValid = true;
+
+    	if (user_name == ""){
+    		$("#name").css("border-color","red");
+    		mailIsValid = false;
+    	}
+    	if (user_mail == ""){
+    		$("#mail").css("border-color","red");
+    		mailIsValid = false;
+    	}
+    	if (subject == ""){
+    		$("#subject").css("border-color","red");
+    		mailIsValid = false;
+    	}
+    	if (message == ""){
+    		$("#message").css("border-color","red");
+    		mailIsValid = false;
+    	}
+
+    	if (mailIsValid) {
+    		var toPost = {
+    			'name':user_name,
+    			'mail':user_mail,
+    			'subject':subject,
+    			'message':message
+    		};
+
+    		$.post("contact.php", toPost, function(response) {
+    			if (response.type == "error"){
+    				//error
+    				console.error(response.text);
+    			}
+    			else {
+    				$("#contact input, #contact textarea").val("");
+    				//message envoyé !
+    				console.log(response.text);
+    			}
+    		});
+    	}//if mailisvalid
+	    	
+    });
+
+	$("#contact input, #contact textarea").keyup(function() {
+		$(this).css("border-color","");
+	});
+
 });
+    
 
 
 
