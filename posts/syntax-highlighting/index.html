@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Syntax highlighting</title>
+
+
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+
+
+
+<meta name="description" content="">
+
+
+
+
+
+<link rel="canonical" href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;syntax-highlighting&#x2F;">
+
+
+<link rel="stylesheet" href="https://blog.victorviale.com/css/includes/scroll-bar.css">
+<link rel="stylesheet" href="https://blog.victorviale.com/css/styles.css">
+<link rel="stylesheet" href="https://blog.victorviale.com/css/override.css">
+
+
+
+
+
+
+
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+    </style>
+    
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+    
+</noscript>
+
+
+
+    
+</head>
+<body class=" dark" id="top">
+    
+    
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https:&#x2F;&#x2F;blog.victorviale.com" accesskey="h" title="Victor Viale (Alt + H)">
+                Victor Viale
+            </a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        
+        <ul id="menu">
+            
+            
+            
+            <li>
+                <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;archive" title="Archive">
+                    <span>Archive</span>
+                    
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;tags" title="Tags">
+                    <span>Tags</span>
+                    
+                </a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</header>
+
+    
+    <main class="main">
+        
+<article class="post-single">
+  <header class="post-header">
+      <div class="breadcrumbs">
+          <a href="https:&#x2F;&#x2F;blog.victorviale.com">Home</a>&nbsp;»&nbsp;
+          <a href="https://blog.victorviale.com/posts/">Posts</a>&nbsp;»&nbsp;
+          <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;syntax-highlighting&#x2F;">Syntax highlighting</a>
+      </div>
+      <h1 class="post-title">Syntax highlighting</h1>
+      
+      
+      <div class="post-meta">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span title="2023-04-21 00:00:00 +0000">2023-04-21</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;
+
+      &nbsp;|&nbsp;<a href="https:&#x2F;&#x2F;github.com&#x2F;koroeskohr&#x2F;koroeskohr.github.io&#x2F;tree&#x2F;main/content/posts&#x2F;2023-04-21_syntax_highlighting.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+      </div>
+      
+  </header>
+
+  
+  
+
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner">
+            <ul>
+                
+                <li>
+                    <a href="#some-examples" aria-label="Some examples">Some examples</a>
+                    
+                    <ul>
+                    
+                        <li>
+                            <a href="#toml" aria-label="TOML">TOML</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#yaml" aria-label="YAML">YAML</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#with-line-numbers" aria-label="With Line Numbers">With Line Numbers</a>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </details>
+</div>
+
+
+  
+
+  
+  <div class="post-content">
+      <p>This is a page summary, it should show up in the main posts area and provide
+readers with a preview.</p>
+<span id="continue-reading"></span><h2 id="some-examples">Some examples<a class="anchor" aria-hidden="true" href="#some-examples" hidden="">#</a>
+</h2>
+<h3 id="toml">TOML<a class="anchor" aria-hidden="true" href="#toml" hidden="">#</a>
+</h3>
+<pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[extra]
+</span><span>
+</span><span>[extra.papermod]
+</span><span style="color:#bf616a;">title </span><span>= &quot;</span><span style="color:#a3be8c;">PaperMod</span><span>&quot;
+</span><span style="color:#bf616a;">default_theme </span><span>= &quot;</span><span style="color:#a3be8c;">auto</span><span>&quot;
+</span><span style="color:#bf616a;">theme </span><span>= &quot;</span><span style="color:#a3be8c;">light</span><span>&quot;
+</span><span style="color:#bf616a;">language_direction </span><span>= &quot;</span><span style="color:#a3be8c;">auto</span><span>&quot;
+</span><span style="color:#bf616a;">keywords </span><span>= [&quot;</span><span style="color:#a3be8c;">keyword1</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">keyword2</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">keyword3</span><span>&quot;]
+</span><span style="color:#bf616a;">disable_theme_toggle </span><span>= </span><span style="color:#d08770;">false
+</span><span style="color:#bf616a;">show_code_copy_buttons </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">show_reading_time </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">show_word_count </span><span>= </span><span style="color:#d08770;">false
+</span><span style="color:#bf616a;">show_post_nav_links </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">show_post_meta </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">default_toc_open </span><span>= </span><span style="color:#d08770;">false
+</span><span style="color:#bf616a;">edit_post_url </span><span>= &quot;</span><span style="color:#a3be8c;">https://github.com/cydave/zola-theme-papermod/tree/master</span><span>&quot;
+</span><span style="color:#bf616a;">copyright </span><span>= &quot;&quot;
+</span><span style="color:#bf616a;">date_format </span><span>= &quot;</span><span style="color:#a3be8c;">%Y-%m-%d</span><span>&quot;
+</span></code></pre>
+<h3 id="yaml">YAML<a class="anchor" aria-hidden="true" href="#yaml" hidden="">#</a>
+</h3>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span>- </span><span style="color:#bf616a;">martin</span><span>:
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Martin D&#39;vloper
+</span><span>    </span><span style="color:#bf616a;">job</span><span>: </span><span style="color:#a3be8c;">Developer
+</span><span>    </span><span style="color:#bf616a;">skills</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">python
+</span><span>      - </span><span style="color:#a3be8c;">perl
+</span><span>      - </span><span style="color:#a3be8c;">pascal
+</span><span>- </span><span style="color:#bf616a;">tabitha</span><span>:
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Tabitha Bitumen
+</span><span>    </span><span style="color:#bf616a;">job</span><span>: </span><span style="color:#a3be8c;">Developer
+</span><span>    </span><span style="color:#bf616a;">skills</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">lisp
+</span><span>      - </span><span style="color:#a3be8c;">fortran
+</span><span>      - </span><span style="color:#a3be8c;">erlang
+</span></code></pre>
+<h3 id="with-line-numbers">With Line Numbers<a class="anchor" aria-hidden="true" href="#with-line-numbers" hidden="">#</a>
+</h3>
+<pre data-linenos data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><table><tbody><tr><td>98</td><td><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">MockResponse</span><span style="color:#eff1f5;">:
+</span></td></tr><tr><td>99</td><td><span>    </span><span style="color:#65737e;">&quot;&quot;&quot;Wraps a `httplib.HTTPMessage` to mimic a `urllib.addinfourl`.
+</span></td></tr><tr><td>100</td><td><span style="color:#65737e;">    ...what? Basically, expose the parsed HTTP headers from the server response
+</span></td></tr><tr><td>101</td><td><span style="color:#65737e;">    the way `cookielib` expects to see them.
+</span></td></tr><tr><td>102</td><td><span style="color:#65737e;">    &quot;&quot;&quot;
+</span></td></tr><tr><td>103</td><td><span>
+</span></td></tr><tr><td>104</td><td><span>    </span><span style="color:#b48ead;">def </span><span style="color:#96b5b4;">__init__</span><span>(</span><span style="color:#bf616a;">self</span><span>, </span><span style="color:#bf616a;">headers</span><span>):
+</span></td></tr><tr><td>105</td><td><span>        </span><span style="color:#65737e;">&quot;&quot;&quot;Make a MockResponse for `cookielib` to read.
+</span></td></tr><tr><td>106</td><td><span style="color:#65737e;">        :param headers: a httplib.HTTPMessage or analogous carrying the headers
+</span></td></tr><tr><td>107</td><td><span style="color:#65737e;">        &quot;&quot;&quot;
+</span></td></tr><tr><td>108</td><td><span>        </span><span style="color:#bf616a;">self</span><span>._headers = headers
+</span></td></tr><tr><td>109</td><td><span>
+</span></td></tr><tr><td>110</td><td><span>    </span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">info</span><span>(</span><span style="color:#bf616a;">self</span><span>):
+</span></td></tr><tr><td>111</td><td><span>        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">self</span><span>._headers
+</span></td></tr><tr><td>112</td><td><span>
+</span></td></tr><tr><td>113</td><td><span>    </span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">getheaders</span><span>(</span><span style="color:#bf616a;">self</span><span>, </span><span style="color:#bf616a;">name</span><span>):
+</span></td></tr><tr><td>114</td><td><span>        </span><span style="color:#bf616a;">self</span><span>._headers.</span><span style="color:#bf616a;">getheaders</span><span>(name)
+</span></td></tr></tbody></table></code></pre>
+
+  </div>
+  
+
+  <footer class="post-footer">
+      
+
+    
+    
+
+
+<nav class="paginav">
+    
+    <a class="prev" href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;markdown-example&#x2F;">
+        <span class="title">« Prev</span>
+        <br>
+        <span>Markdown Examples</span>
+    </a>
+    
+    
+</nav>
+
+
+    
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="koroeskohr/koroeskohr.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNjY3OTQ2OA=="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOAP6CLM4CbZEw"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </footer>
+
+</article>
+
+    </main>
+    
+    <footer class="footer">
+    
+    <span>&copy; 2023 <a href="https:&#x2F;&#x2F;blog.victorviale.com"></a></span>
+    
+    <span>
+        Powered by
+        <a href="https://www.getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a> &
+        <a href="https://github.com/cydave/zola-theme-papermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+
+
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            // td containing LineNos
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            // table containing LineNos and code
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            // code blocks not having highlight as parent class
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    
+</body>
+</html>

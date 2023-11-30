@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Markdown Examples</title>
+
+
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+
+
+
+<meta name="description" content="">
+
+
+
+
+
+<link rel="canonical" href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;markdown-example&#x2F;">
+
+
+<link rel="stylesheet" href="https://blog.victorviale.com/css/includes/scroll-bar.css">
+<link rel="stylesheet" href="https://blog.victorviale.com/css/styles.css">
+<link rel="stylesheet" href="https://blog.victorviale.com/css/override.css">
+
+
+
+
+
+
+
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+    </style>
+    
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+    
+</noscript>
+
+
+
+    
+</head>
+<body class=" dark" id="top">
+    
+    
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https:&#x2F;&#x2F;blog.victorviale.com" accesskey="h" title="Victor Viale (Alt + H)">
+                Victor Viale
+            </a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        
+        <ul id="menu">
+            
+            
+            
+            <li>
+                <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;archive" title="Archive">
+                    <span>Archive</span>
+                    
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;tags" title="Tags">
+                    <span>Tags</span>
+                    
+                </a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</header>
+
+    
+    <main class="main">
+        
+<article class="post-single">
+  <header class="post-header">
+      <div class="breadcrumbs">
+          <a href="https:&#x2F;&#x2F;blog.victorviale.com">Home</a>&nbsp;»&nbsp;
+          <a href="https://blog.victorviale.com/posts/">Posts</a>&nbsp;»&nbsp;
+          <a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;markdown-example&#x2F;">Markdown Examples</a>
+      </div>
+      <h1 class="post-title">Markdown Examples</h1>
+      
+      
+      <div class="post-meta">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span title="2023-02-04 15:00:00 +0000">2023-02-04</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;
+
+      &nbsp;|&nbsp;<a href="https:&#x2F;&#x2F;github.com&#x2F;koroeskohr&#x2F;koroeskohr.github.io&#x2F;tree&#x2F;main/content/posts&#x2F;markdown-example.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+      </div>
+      
+  </header>
+
+  
+  
+
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner">
+            <ul>
+                
+                <li>
+                    <a href="#headings" aria-label="Headings">Headings</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="#h1" aria-label="H1">H1</a>
+                    
+                    <ul>
+                    
+                        <li>
+                            <a href="#h2" aria-label="H2">H2</a>
+                            
+                            <ul>
+                                
+                                <li><a href="#h3" aria-label="H3">H3</a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#paragraph" aria-label="Paragraph">Paragraph</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="#blockquotes" aria-label="Blockquotes">Blockquotes</a>
+                    
+                    <ul>
+                    
+                        <li>
+                            <a href="#blockquote-without-attribution" aria-label="Blockquote without attribution">Blockquote without attribution</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#blockquote-with-attribution" aria-label="Blockquote with attribution">Blockquote with attribution</a>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#tables" aria-label="Tables">Tables</a>
+                    
+                    <ul>
+                    
+                        <li>
+                            <a href="#inline-markdown-within-tables" aria-label="Inline Markdown within tables">Inline Markdown within tables</a>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#code-blocks" aria-label="Code Blocks">Code Blocks</a>
+                    
+                    <ul>
+                    
+                        <li>
+                            <a href="#inline-code" aria-label="Inline Code">Inline Code</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#only-pre" aria-label="Only pre">Only pre</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#code-block-with-backticks" aria-label="Code block with backticks">Code block with backticks</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#code-block-with-backticks-and-language-specified" aria-label="Code block with backticks and language specified">Code block with backticks and language specified</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#code-block-indented-with-four-spaces" aria-label="Code block indented with four spaces">Code block indented with four spaces</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#code-block-with-hugo-s-internal-highlight-shortcode" aria-label="Code block with Hugo&#x27;s internal highlight shortcode">Code block with Hugo&#x27;s internal highlight shortcode</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#gist" aria-label="Gist">Gist</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="#list-types" aria-label="List Types">List Types</a>
+                            
+                            <ul>
+                                
+                                <li><a href="#ordered-list" aria-label="Ordered List">Ordered List</a></li>
+                                
+                                <li><a href="#unordered-list" aria-label="Unordered List">Unordered List</a></li>
+                                
+                                <li><a href="#nested-list" aria-label="Nested list">Nested list</a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#other-elements-abbr-sub-sup-kbd-mark" aria-label="Other Elements — abbr, sub, sup, kbd, mark">Other Elements — abbr, sub, sup, kbd, mark</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </details>
+</div>
+
+
+  
+
+  
+  <div class="post-content">
+      <p>This article offers a sample of basic Markdown syntax that can be used in <del>Hugo</del> Zola content files, also it shows whether basic HTML elements are decorated with CSS in a <del>Hugo</del> Zola theme.</p>
+<!--more-->
+<h1 id="headings">Headings<a class="anchor" aria-hidden="true" href="#headings" hidden="">#</a>
+</h1>
+<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+<h1 id="h1">H1<a class="anchor" aria-hidden="true" href="#h1" hidden="">#</a>
+</h1>
+<h2 id="h2">H2<a class="anchor" aria-hidden="true" href="#h2" hidden="">#</a>
+</h2>
+<h3 id="h3">H3<a class="anchor" aria-hidden="true" href="#h3" hidden="">#</a>
+</h3>
+<h4 id="h4">H4<a class="anchor" aria-hidden="true" href="#h4" hidden="">#</a>
+</h4>
+<h5 id="h5">H5<a class="anchor" aria-hidden="true" href="#h5" hidden="">#</a>
+</h5>
+<h6 id="h6">H6<a class="anchor" aria-hidden="true" href="#h6" hidden="">#</a>
+</h6>
+<h1 id="paragraph">Paragraph<a class="anchor" aria-hidden="true" href="#paragraph" hidden="">#</a>
+</h1>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h1 id="blockquotes">Blockquotes<a class="anchor" aria-hidden="true" href="#blockquotes" hidden="">#</a>
+</h1>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h3 id="blockquote-without-attribution">Blockquote without attribution<a class="anchor" aria-hidden="true" href="#blockquote-without-attribution" hidden="">#</a>
+</h3>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h3 id="blockquote-with-attribution">Blockquote with attribution<a class="anchor" aria-hidden="true" href="#blockquote-with-attribution" hidden="">#</a>
+</h3>
+<blockquote>
+<p>Don't communicate by sharing memory, share memory by communicating.</p>
+<p>— <cite>Rob Pike<sup class="footnote-reference"><a href="#1">1</a></sup></cite></p>
+</blockquote>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>The above quote is excerpted from Rob Pike's <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.</p>
+</div>
+<h1 id="tables">Tables<a class="anchor" aria-hidden="true" href="#tables" hidden="">#</a>
+</h1>
+<p>Tables aren't part of the core Markdown spec, but <del>Hugo</del> Zola supports them out-of-the-box.</p>
+<table><thead><tr><th>Name</th><th>Age</th></tr></thead><tbody>
+<tr><td>Bob</td><td>27</td></tr>
+<tr><td>Alice</td><td>23</td></tr>
+</tbody></table>
+<h3 id="inline-markdown-within-tables">Inline Markdown within tables<a class="anchor" aria-hidden="true" href="#inline-markdown-within-tables" hidden="">#</a>
+</h3>
+<table><thead><tr><th>Italics</th><th>Bold</th><th>Code</th></tr></thead><tbody>
+<tr><td><em>italics</em></td><td><strong>bold</strong></td><td><code>code</code></td></tr>
+</tbody></table>
+<h1 id="code-blocks">Code Blocks<a class="anchor" aria-hidden="true" href="#code-blocks" hidden="">#</a>
+</h1>
+<h3 id="inline-code">Inline Code<a class="anchor" aria-hidden="true" href="#inline-code" hidden="">#</a>
+</h3>
+<p><code>This is Inline Code</code></p>
+<h3 id="only-pre">Only <code>pre</code><a class="anchor" aria-hidden="true" href="#only-pre" hidden="">#</a>
+</h3>
+<pre>
+This is pre text
+</pre>
+<h3 id="code-block-with-backticks">Code block with backticks<a class="anchor" aria-hidden="true" href="#code-block-with-backticks" hidden="">#</a>
+</h3>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>&lt;!DOCTYPE html&gt;
+</span><span>&lt;html lang=&quot;en&quot;&gt;
+</span><span>    &lt;head&gt;
+</span><span>        &lt;meta charset=&quot;utf-8&quot; /&gt;
+</span><span>        &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+</span><span>    &lt;/head&gt;
+</span><span>    &lt;body&gt;
+</span><span>        &lt;p&gt;Test&lt;/p&gt;
+</span><span>    &lt;/body&gt;
+</span><span>&lt;/html&gt;
+</span></code></pre>
+<h3 id="code-block-with-backticks-and-language-specified">Code block with backticks and language specified<a class="anchor" aria-hidden="true" href="#code-block-with-backticks-and-language-specified" hidden="">#</a>
+</h3>
+<pre data-linenos data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><table><tbody><tr><td>1</td><td><span>&lt;!</span><span style="color:#b48ead;">DOCTYPE </span><span style="color:#d08770;">html</span><span>&gt;
+</span></td></tr><tr><td>2</td><td><span>&lt;</span><span style="color:#bf616a;">html </span><span style="color:#d08770;">lang</span><span>=&quot;</span><span style="color:#a3be8c;">en</span><span>&quot;&gt;
+</span></td></tr><tr><td>3</td><td><span>    &lt;</span><span style="color:#bf616a;">head</span><span>&gt;
+</span></td></tr><tr><td>4</td><td><span>        &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span>=&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot; /&gt;
+</span></td></tr><tr><td>5</td><td><span>        &lt;</span><span style="color:#bf616a;">title</span><span>&gt;Example HTML5 Document&lt;/</span><span style="color:#bf616a;">title</span><span>&gt;
+</span></td></tr><tr><td>6</td><td><span>        &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">name</span><span>=&quot;</span><span style="color:#a3be8c;">description</span><span>&quot; </span><span style="color:#d08770;">content</span><span>=&quot;</span><span style="color:#a3be8c;">Sample article showcasing basic Markdown syntax and formatting for HTML elements.</span><span>&quot;&gt;
+</span></td></tr><tr><td>7</td><td><span>    &lt;/</span><span style="color:#bf616a;">head</span><span>&gt;
+</span></td></tr><tr><td>8</td><td><span>    &lt;</span><span style="color:#bf616a;">body</span><span>&gt;
+</span></td></tr><tr><td>9</td><td><span>        &lt;</span><span style="color:#bf616a;">p</span><span>&gt;Test&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span></td></tr><tr><td>10</td><td><span>    &lt;/</span><span style="color:#bf616a;">body</span><span>&gt;
+</span></td></tr><tr><td>11</td><td><span>&lt;/</span><span style="color:#bf616a;">html</span><span>&gt;
+</span></td></tr></tbody></table></code></pre>
+<h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces<a class="anchor" aria-hidden="true" href="#code-block-indented-with-four-spaces" hidden="">#</a>
+</h3>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>&lt;!doctype html&gt;
+</span><span>&lt;html lang=&quot;en&quot;&gt;
+</span><span>&lt;head&gt;
+</span><span>  &lt;meta charset=&quot;utf-8&quot;&gt;
+</span><span>  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+</span><span>&lt;/head&gt;
+</span><span>&lt;body&gt;
+</span><span>  &lt;p&gt;Test&lt;/p&gt;
+</span><span>&lt;/body&gt;
+</span><span>&lt;/html&gt;
+</span></code></pre>
+<h3 id="code-block-with-hugo-s-internal-highlight-shortcode">Code block with Hugo's internal highlight shortcode<a class="anchor" aria-hidden="true" href="#code-block-with-hugo-s-internal-highlight-shortcode" hidden="">#</a>
+</h3>
+<p>{{&lt; highlight html &gt;}}</p>
+<p>&lt;!doctype html&gt;</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+{{< /highlight >}}
+<h3 id="gist">Gist<a class="anchor" aria-hidden="true" href="#gist" hidden="">#</a>
+</h3>
+<p>{{&lt; gist spf13 7896402 &gt;}}</p>
+<h2 id="list-types">List Types<a class="anchor" aria-hidden="true" href="#list-types" hidden="">#</a>
+</h2>
+<h3 id="ordered-list">Ordered List<a class="anchor" aria-hidden="true" href="#ordered-list" hidden="">#</a>
+</h3>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="unordered-list">Unordered List<a class="anchor" aria-hidden="true" href="#unordered-list" hidden="">#</a>
+</h3>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h3 id="nested-list">Nested list<a class="anchor" aria-hidden="true" href="#nested-list" hidden="">#</a>
+</h3>
+<ul>
+<li>Fruit
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</li>
+<li>Dairy
+<ul>
+<li>Milk</li>
+<li>Cheese</li>
+</ul>
+</li>
+</ul>
+<h1 id="other-elements-abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark<a class="anchor" aria-hidden="true" href="#other-elements-abbr-sub-sup-kbd-mark" hidden="">#</a>
+</h1>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+
+  </div>
+  
+
+  <footer class="post-footer">
+      
+      <ul class="post-tags">
+          
+          
+          <li><a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;tags&#x2F;zola&#x2F;">zola</a></li>
+          
+          
+          <li><a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;tags&#x2F;theme&#x2F;">theme</a></li>
+          
+          
+          <li><a href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;tags&#x2F;showcase&#x2F;">showcase</a></li>
+          
+      </ul>
+      
+
+    
+    
+
+
+<nav class="paginav">
+    
+    
+    <a class="next" href="https:&#x2F;&#x2F;blog.victorviale.com&#x2F;posts&#x2F;syntax-highlighting&#x2F;">
+        <span class="title">Next »</span>
+        <br>
+        <span>Syntax highlighting</span>
+    </a>
+    
+</nav>
+
+
+    
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="koroeskohr/koroeskohr.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNjY3OTQ2OA=="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOAP6CLM4CbZEw"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </footer>
+
+</article>
+
+    </main>
+    
+    <footer class="footer">
+    
+    <span>&copy; 2023 <a href="https:&#x2F;&#x2F;blog.victorviale.com"></a></span>
+    
+    <span>
+        Powered by
+        <a href="https://www.getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a> &
+        <a href="https://github.com/cydave/zola-theme-papermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+
+
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            // td containing LineNos
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            // table containing LineNos and code
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            // code blocks not having highlight as parent class
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    
+</body>
+</html>
